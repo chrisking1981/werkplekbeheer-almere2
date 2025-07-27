@@ -10,6 +10,22 @@
       "dest": "/api/index.php"
     },
     {
+      "src": "/wat-is-werkplekbeheer",
+      "dest": "/wat-is-werkplekbeheer.html"
+    },
+    {
+      "src": "/voordelen-werkplekbeheer", 
+      "dest": "/voordelen-werkplekbeheer.html"
+    },
+    {
+      "src": "/werkwijze",
+      "dest": "/werkwijze.html"
+    },
+    {
+      "src": "/kosten-werkplekbeheer",
+      "dest": "/kosten-werkplekbeheer.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
