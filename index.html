@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werkplekbeheer Almere – Uw digitale werkplek op maat</title>
+    <style>
+        /* Basiskleuren */
+        :root {
+            --primary-color: #0a3172; /* donkerblauw voor vertrouwen */
+            --accent-color: #2ecc71; /* groen als frisse accentkleur */
+            --text-color: #333333;
+            --background-color: #ffffff;
+            --light-gray: #f8f8f8;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+        }
+
+        /* Navigatie */
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            color: #ffffff;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .nav-links a {
+            color: #ffffff;
+            margin-left: 1rem;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero sectie */
+        .hero {
+            background-color: var(--light-gray);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+        }
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            background-color: #27ae60;
+        }
+
+        /* Secties */
+        section {
+            padding: 3rem 2rem;
+        }
+        section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        section h2 {
+            font-size: 1.75rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        section p {
+            margin-bottom: 1rem;
+        }
+        ul.bullet-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul.bullet-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        ul.bullet-list li::before {
+            content: "\2022"; /* bullet symbol */
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        /* CTA sectie */
+        .cta-section {
+            text-align: center;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 4rem 2rem;
+        }
+        .cta-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .cta-section a.btn-cta {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .cta-section a.btn-cta:hover {
+            background-color: #27ae60;
+        }
+
+        /* Contactformulier */
+        .contact-section {
+            background-color: var(--light-gray);
+            padding: 3rem 2rem;
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .contact-container .contact-form,
+        .contact-container .contact-info {
+            flex: 1 1 350px;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .contact-form button {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #27ae60;
+        }
+        .contact-info address {
+            font-style: normal;
+            line-height: 1.5;
+        }
+        .contact-info h4 {
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 2rem;
+        }
+        footer .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+        footer h5 {
+            margin-top: 0;
+        }
+        footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        footer ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+        footer .small {
+            font-size: 0.8rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Uw ICT Partner</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#wat-is">Wat is werkplekbeheer?</a>
+                <a href="#voordelen">Voordelen</a>
+                <a href="#werkwijze">Onze werkwijze</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <h1>Werkplekbeheer Almere</h1>
+            <p>Beheer en beveiliging van jouw digitale werkplek, zodat je team altijd en overal efficiënt kan werken. Wij leveren volledige ontzorging: van maatwerk werkplekken tot periodiek onderhoud en 24/7 support.</p>
+            <a href="#contact" class="btn-primary">Plan gratis adviesgesprek</a>
+        </section>
+
+        <!-- Installatie sectie -->
+        <section id="installatie">
+            <h2>Installatie van je werkplek op maat</h2>
+            <p>Het (her)inrichten van digitale werkplekken kost tijd en aandacht. Wij zorgen ervoor dat iedere medewerker een werkplek krijgt die past bij de werkzaamheden. Denk aan de juiste hardware, software en toegangsrechten, zodat iedereen efficiënt en flexibel kan werken.</p>
+            <p>Onze dienstverlening stopt niet bij de levering van apparatuur; we richten elke werkplek volledig in en zorgen dat toegang, snelheid en veiligheid optimaal zijn.</p>
+            <a href="#contact" class="btn-primary">Neem vrijblijvend contact op</a>
+        </section>
+
+        <!-- Onderhoud sectie -->
+        <section id="onderhoud">
+            <h2>Periodiek onderhoud en updates in Almere</h2>
+            <p>Naast de inrichting voeren we periodiek onderhoud en updates uit. Onze ICT‑professionals monitoren de prestaties op afstand. Door tijdig updates door te voeren blijf je vertrouwen op een veilige en snelle werkomgeving.</p>
+            <p>Met proactieve monitoring signaleren én lossen we problemen vaak al op voordat je er iets van merkt. Indien nodig komen we op locatie voor ondersteuning.</p>
+        </section>
+
+        <!-- Focus sectie -->
+        <section id="focus">
+            <h2>Meer focus op je core business</h2>
+            <p>Door het werkplekbeheer aan ons uit te besteden, weet je zeker dat je systeem altijd up‑to‑date, betrouwbaar en stabiel werkt. Jij en je collega’s kunnen zich volledig richten op de kernactiviteiten van het bedrijf terwijl wij de techniek beheren.</p>
+            <p>Onze oplossingen zijn schaalbaar en afgestemd op de toekomst, zodat je organisatie mee kan groeien zonder zorgen over IT‑problemen.</p>
+        </section>
+
+        <!-- Voordelen sectie -->
+        <section id="voordelen">
+            <h2>Voordelen van werkplekbeheer</h2>
+            <ul class="bullet-list">
+                <li>24/7 bereikbaarheid voor hulp en onderhoud</li>
+                <li>Voorspelbare en aantrekkelijke tarieven</li>
+                <li>Preventief en curatief onderhoud van hardware en software</li>
+                <li>Deskundige controle van software, cloud‑oplossingen en geheugenbeheer</li>
+                <li>Efficiënt systeem-, netwerk- en applicatiebeheer</li>
+                <li>Betrouwbaar security‑management en veilige werkplekken</li>
+                <li>Bespaar op licenties, hardware en personeel</li>
+            </ul>
+        </section>
+
+        <!-- Werkwijze sectie -->
+        <section id="werkwijze">
+            <h2>Onze werkwijze</h2>
+            <p>Wij leveren niet alleen producten, maar denken mee en begeleiden het volledige proces. Onze aanpak bestaat uit vier stappen:</p>
+            <ul class="bullet-list">
+                <li><strong>Inventarisatie:</strong> we brengen samen de huidige IT‑omgeving in kaart en bespreken wensen.</li>
+                <li><strong>Maatwerk inrichting:</strong> we leveren en installeren hardware en software die passen bij de taken van elke medewerker.</li>
+                <li><strong>Periodiek onderhoud & updates:</strong> we houden systemen up‑to‑date en verzorgen regelmatig onderhoud.</li>
+                <li><strong>Monitoring en support:</strong> we monitoren continu en bieden ondersteuning op afstand en op locatie.</li>
+            </ul>
+        </section>
+
+        <!-- Call to action sectie -->
+        <section class="cta-section">
+            <h3>Ontvang gratis advies over werkplekbeheer in Almere</h3>
+            <p>Benieuwd wat werkplekbeheer voor jouw bedrijf kan betekenen? Plan een gratis adviesgesprek met onze specialisten.</p>
+            <a href="#contact" class="btn-cta">Vrijblijvende afspraak maken</a>
+        </section>
+
+        <!-- Contact sectie -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Contact opnemen</h2>
+                    <form action="#" method="post">
+                        <label for="name">Naam*</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="company">Bedrijfsnaam</label>
+                        <input type="text" id="company" name="company">
+
+                        <label for="email">E‑mail*</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Telefoonnummer*</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="message">Vraag of opmerking</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+
+                        <label for="privacy">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            Ik ga akkoord met het privacybeleid
+                        </label>
+
+                        <button type="submit">Verzenden</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Onze gegevens</h2>
+                    <address>
+                        <strong>Werkplekbeheer Almere BV</strong><br>
+                        Bedrijfstraat 1<br>
+                        1321 AA Almere<br>
+                        Nederland<br><br>
+                        <strong>Telefoon:</strong> 036 123 4567<br>
+                        <strong>E‑mail:</strong> info@werkplekbeheer-almere.nl
+                    </address>
+                    <p>Wij zijn gevestigd in Almere en helpen bedrijven in de hele regio met het beheren van hun digitale werkplekken. Neem gerust contact op voor meer informatie of een persoonlijk adviesgesprek.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h5>Navigatie</h5>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#installatie">Installatie op maat</a></li>
+                    <li><a href="#onderhoud">Onderhoud & updates</a></li>
+                    <li><a href="#voordelen">Voordelen</a></li>
+                    <li><a href="#werkwijze">Werkwijze</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Diensten</h5>
+                <ul>
+                    <li><a href="#">Werkplekbeheer</a></li>
+                    <li><a href="#">Serverbeheer</a></li>
+                    <li><a href="#">Netwerkbeheer</a></li>
+                    <li><a href="#">VoIP Telefonie</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Contact</h5>
+                <address>
+                    Werkplekbeheer Almere BV<br>
+                    Bedrijfstraat 1, 1321 AA Almere<br>
+                    info@werkplekbeheer-almere.nl<br>
+                    036 123 4567
+                </address>
+            </div>
+        </div>
+        <div class="small">
+            © 2025 Werkplekbeheer Almere BV | Alle rechten voorbehouden
+        </div>
+    </footer>
+</body>
+</html>
