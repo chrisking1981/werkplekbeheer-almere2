@@ -4,6 +4,28 @@
       "runtime": "vercel-php@0.7.2"
     }
   },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.php"
+    },
+    {
+      "source": "/wat-is-werkplekbeheer",
+      "destination": "/wat-is-werkplekbeheer.html"
+    },
+    {
+      "source": "/voordelen-werkplekbeheer", 
+      "destination": "/voordelen-werkplekbeheer.html"
+    },
+    {
+      "source": "/werkwijze",
+      "destination": "/werkwijze.html"
+    },
+    {
+      "source": "/kosten-werkplekbeheer",
+      "destination": "/kosten-werkplekbeheer.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -25,32 +47,6 @@
           "value": "camera=(), microphone=(), geolocation=()"
         }
       ]
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/index.php"
-    },
-    {
-      "src": "/wat-is-werkplekbeheer",
-      "dest": "/wat-is-werkplekbeheer.html"
-    },
-    {
-      "src": "/voordelen-werkplekbeheer", 
-      "dest": "/voordelen-werkplekbeheer.html"
-    },
-    {
-      "src": "/werkwijze",
-      "dest": "/werkwijze.html"
-    },
-    {
-      "src": "/kosten-werkplekbeheer",
-      "dest": "/kosten-werkplekbeheer.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
     }
   ]
 }
