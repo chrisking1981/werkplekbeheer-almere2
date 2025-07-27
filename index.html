@@ -3,385 +3,652 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werkplekbeheer Almere – Uw digitale werkplek op maat</title>
+    <title>Chris Networks - Werkplekbeheer Almere | IT Beheer & Managed Services</title>
+    <meta name="description" content="Chris Networks levert professioneel werkplekbeheer in Almere. 24/7 IT support, managed services en complete digitale werkplekken voor MKB bedrijven.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Basiskleuren */
         :root {
-            --primary-color: #0a3172; /* donkerblauw voor vertrouwen */
-            --accent-color: #2ecc71; /* groen als frisse accentkleur */
-            --text-color: #333333;
-            --background-color: #ffffff;
-            --light-gray: #f8f8f8;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --border: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: var(--text-color);
-            background-color: var(--background-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--background);
         }
 
-        /* Navigatie */
-        header {
-            background-color: var(--primary-color);
-            padding: 1rem 2rem;
-            color: #ffffff;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
         }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 1rem 0;
         }
+
         .logo {
             font-size: 1.5rem;
-            font-weight: bold;
-            color: #ffffff;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
         }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
         .nav-links a {
-            color: #ffffff;
-            margin-left: 1rem;
+            color: var(--text-primary);
             text-decoration: none;
-            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
+
         .nav-links a:hover {
-            text-decoration: underline;
+            color: var(--primary);
         }
 
-        /* Hero sectie */
-        .hero {
-            background-color: var(--light-gray);
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--primary-color);
-        }
-        .hero p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto 1.5rem;
-        }
-        .btn-primary {
-            background-color: var(--accent-color);
-            color: #ffffff;
+        .cta-button {
+            background: var(--gradient);
+            color: white;
             padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
+            border-radius: 8px;
             text-decoration: none;
-        }
-        .btn-primary:hover {
-            background-color: #27ae60;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        /* Secties */
-        section {
-            padding: 3rem 2rem;
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
-        section:nth-child(even) {
-            background-color: var(--light-gray);
-        }
-        section h2 {
-            font-size: 1.75rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        section p {
-            margin-bottom: 1rem;
-        }
-        ul.bullet-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        ul.bullet-list li {
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient);
+            color: white;
+            padding: 8rem 0 6rem;
+            text-align: center;
             position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.5rem;
+            overflow: hidden;
         }
-        ul.bullet-list li::before {
-            content: "\2022"; /* bullet symbol */
+
+        .hero::before {
+            content: '';
             position: absolute;
-            left: 0;
             top: 0;
-            color: var(--accent-color);
-            font-size: 1.2rem;
-            line-height: 1;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a"><stop offset="0" stop-color="%23ffffff" stop-opacity=".1"/><stop offset="1" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><g opacity=".8"><circle cx="200" cy="200" r="300" fill="url(%23a)"/><circle cx="800" cy="800" r="300" fill="url(%23a)"/></g></svg>') no-repeat center;
+            background-size: cover;
         }
 
-        /* CTA sectie */
-        .cta-section {
-            text-align: center;
-            background-color: var(--primary-color);
-            color: #ffffff;
-            padding: 4rem 2rem;
-        }
-        .cta-section h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        .cta-section a.btn-cta {
-            background-color: var(--accent-color);
-            color: #ffffff;
-            padding: 0.75rem 2rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .cta-section a.btn-cta:hover {
-            background-color: #27ae60;
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
 
-        /* Contactformulier */
-        .contact-section {
-            background-color: var(--light-gray);
-            padding: 3rem 2rem;
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
         }
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
             display: flex;
+            gap: 1rem;
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 2rem;
         }
-        .contact-container .contact-form,
-        .contact-container .contact-info {
-            flex: 1 1 350px;
-        }
-        .contact-form form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form label {
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        .contact-form textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        .contact-form button {
-            background-color: var(--accent-color);
-            color: #ffffff;
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
             border: none;
-            padding: 0.75rem;
-            border-radius: 4px;
-            font-size: 1rem;
             cursor: pointer;
         }
-        .contact-form button:hover {
-            background-color: #27ae60;
-        }
-        .contact-info address {
-            font-style: normal;
-            line-height: 1.5;
-        }
-        .contact-info h4 {
-            margin-top: 0;
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border: 2px solid white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
         }
 
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            padding: 2rem;
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
-        footer .footer-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: space-between;
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
         }
-        footer h5 {
-            margin-top: 0;
+
+        /* Sections */
+        section {
+            padding: 5rem 0;
         }
-        footer ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        footer ul li a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        footer ul li a:hover {
-            text-decoration: underline;
-        }
-        footer .small {
-            font-size: 0.8rem;
-            margin-top: 2rem;
+
+        .section-header {
             text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Trust Section */
+        .trust-section {
+            background: var(--surface);
+            padding: 4rem 0;
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .trust-badge {
+            padding: 1rem 2rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--gradient);
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--secondary);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: var(--shadow-lg);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .sticky-cta:hover {
+            transform: scale(1.05);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero {
+                padding: 6rem 0 4rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .sticky-cta {
+                bottom: 1rem;
+                right: 1rem;
+                font-size: 0.9rem;
+                padding: 0.75rem 1.25rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Uw ICT Partner</div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#wat-is">Wat is werkplekbeheer?</a>
-                <a href="#voordelen">Voordelen</a>
-                <a href="#werkwijze">Onze werkwijze</a>
-                <a href="#contact">Contact</a>
-            </div>
+        <nav class="container">
+            <a href="#" class="logo">Chris Networks</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#diensten">Diensten</a></li>
+                <li><a href="#voordelen">Voordelen</a></li>
+                <li><a href="#over-ons">Over ons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Gratis Adviesgesprek</a>
+            <button class="mobile-menu-toggle">☰</button>
         </nav>
     </header>
 
     <main>
-        <!-- Hero -->
         <section class="hero" id="home">
-            <h1>Werkplekbeheer Almere</h1>
-            <p>Beheer en beveiliging van jouw digitale werkplek, zodat je team altijd en overal efficiënt kan werken. Wij leveren volledige ontzorging: van maatwerk werkplekken tot periodiek onderhoud en 24/7 support.</p>
-            <a href="#contact" class="btn-primary">Plan gratis adviesgesprek</a>
-        </section>
-
-        <!-- Installatie sectie -->
-        <section id="installatie">
-            <h2>Installatie van je werkplek op maat</h2>
-            <p>Het (her)inrichten van digitale werkplekken kost tijd en aandacht. Wij zorgen ervoor dat iedere medewerker een werkplek krijgt die past bij de werkzaamheden. Denk aan de juiste hardware, software en toegangsrechten, zodat iedereen efficiënt en flexibel kan werken.</p>
-            <p>Onze dienstverlening stopt niet bij de levering van apparatuur; we richten elke werkplek volledig in en zorgen dat toegang, snelheid en veiligheid optimaal zijn.</p>
-            <a href="#contact" class="btn-primary">Neem vrijblijvend contact op</a>
-        </section>
-
-        <!-- Onderhoud sectie -->
-        <section id="onderhoud">
-            <h2>Periodiek onderhoud en updates in Almere</h2>
-            <p>Naast de inrichting voeren we periodiek onderhoud en updates uit. Onze ICT‑professionals monitoren de prestaties op afstand. Door tijdig updates door te voeren blijf je vertrouwen op een veilige en snelle werkomgeving.</p>
-            <p>Met proactieve monitoring signaleren én lossen we problemen vaak al op voordat je er iets van merkt. Indien nodig komen we op locatie voor ondersteuning.</p>
-        </section>
-
-        <!-- Focus sectie -->
-        <section id="focus">
-            <h2>Meer focus op je core business</h2>
-            <p>Door het werkplekbeheer aan ons uit te besteden, weet je zeker dat je systeem altijd up‑to‑date, betrouwbaar en stabiel werkt. Jij en je collega’s kunnen zich volledig richten op de kernactiviteiten van het bedrijf terwijl wij de techniek beheren.</p>
-            <p>Onze oplossingen zijn schaalbaar en afgestemd op de toekomst, zodat je organisatie mee kan groeien zonder zorgen over IT‑problemen.</p>
-        </section>
-
-        <!-- Voordelen sectie -->
-        <section id="voordelen">
-            <h2>Voordelen van werkplekbeheer</h2>
-            <ul class="bullet-list">
-                <li>24/7 bereikbaarheid voor hulp en onderhoud</li>
-                <li>Voorspelbare en aantrekkelijke tarieven</li>
-                <li>Preventief en curatief onderhoud van hardware en software</li>
-                <li>Deskundige controle van software, cloud‑oplossingen en geheugenbeheer</li>
-                <li>Efficiënt systeem-, netwerk- en applicatiebeheer</li>
-                <li>Betrouwbaar security‑management en veilige werkplekken</li>
-                <li>Bespaar op licenties, hardware en personeel</li>
-            </ul>
-        </section>
-
-        <!-- Werkwijze sectie -->
-        <section id="werkwijze">
-            <h2>Onze werkwijze</h2>
-            <p>Wij leveren niet alleen producten, maar denken mee en begeleiden het volledige proces. Onze aanpak bestaat uit vier stappen:</p>
-            <ul class="bullet-list">
-                <li><strong>Inventarisatie:</strong> we brengen samen de huidige IT‑omgeving in kaart en bespreken wensen.</li>
-                <li><strong>Maatwerk inrichting:</strong> we leveren en installeren hardware en software die passen bij de taken van elke medewerker.</li>
-                <li><strong>Periodiek onderhoud & updates:</strong> we houden systemen up‑to‑date en verzorgen regelmatig onderhoud.</li>
-                <li><strong>Monitoring en support:</strong> we monitoren continu en bieden ondersteuning op afstand en op locatie.</li>
-            </ul>
-        </section>
-
-        <!-- Call to action sectie -->
-        <section class="cta-section">
-            <h3>Ontvang gratis advies over werkplekbeheer in Almere</h3>
-            <p>Benieuwd wat werkplekbeheer voor jouw bedrijf kan betekenen? Plan een gratis adviesgesprek met onze specialisten.</p>
-            <a href="#contact" class="btn-cta">Vrijblijvende afspraak maken</a>
-        </section>
-
-        <!-- Contact sectie -->
-        <section id="contact" class="contact-section">
-            <div class="contact-container">
-                <div class="contact-form">
-                    <h2>Contact opnemen</h2>
-                    <form action="#" method="post">
-                        <label for="name">Naam*</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="company">Bedrijfsnaam</label>
-                        <input type="text" id="company" name="company">
-
-                        <label for="email">E‑mail*</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="phone">Telefoonnummer*</label>
-                        <input type="tel" id="phone" name="phone" required>
-
-                        <label for="message">Vraag of opmerking</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
-
-                        <label for="privacy">
-                            <input type="checkbox" id="privacy" name="privacy" required>
-                            Ik ga akkoord met het privacybeleid
-                        </label>
-
-                        <button type="submit">Verzenden</button>
-                    </form>
+            <div class="container">
+                <div class="hero-content fade-in-up">
+                    <h1>Professioneel Werkplekbeheer in Almere</h1>
+                    <p>Chris Networks ontzorgt uw bedrijf volledig op IT-gebied. Van managed services tot 24/7 support - wij zorgen dat uw team altijd productief kan werken.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Plan Gratis Intake</a>
+                        <a href="#diensten" class="btn-secondary">Bekijk Diensten</a>
+                    </div>
                 </div>
-                <div class="contact-info">
-                    <h2>Onze gegevens</h2>
-                    <address>
-                        <strong>Werkplekbeheer Almere BV</strong><br>
-                        Bedrijfstraat 1<br>
-                        1321 AA Almere<br>
-                        Nederland<br><br>
-                        <strong>Telefoon:</strong> 036 123 4567<br>
-                        <strong>E‑mail:</strong> info@werkplekbeheer-almere.nl
-                    </address>
-                    <p>Wij zijn gevestigd in Almere en helpen bedrijven in de hele regio met het beheren van hun digitale werkplekken. Neem gerust contact op voor meer informatie of een persoonlijk adviesgesprek.</p>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Vertrouwd door 50+ bedrijven in Almere</h2>
+                    <p>Al jaren de IT-partner voor groeiende MKB ondernemingen</p>
+                </div>
+                <div class="trust-badges">
+                    <div class="trust-badge">Microsoft Partner</div>
+                    <div class="trust-badge">ISO 27001</div>
+                    <div class="trust-badge">24/7 Support</div>
+                    <div class="trust-badge">AVG Compliant</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diensten">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Complete IT-Ontzorging</h2>
+                    <p>Van werkplekbeheer tot cloud migratie - wij regelen alles zodat u zich kunt focussen op uw core business</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">💻</div>
+                        <h3>Werkplekbeheer</h3>
+                        <p>Complete inrichting en beheer van digitale werkplekken. Hardware, software en toegangsrechten - alles op maat geregeld.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Security & Backup</h3>
+                        <p>Proactieve beveiliging tegen cyberdreigingen en automatische backups. Uw data is altijd veilig en beschikbaar.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">☁️</div>
+                        <h3>Cloud Services</h3>
+                        <p>Migratie naar Microsoft 365, Azure hosting en cloud storage. Werk overal veilig en efficiënt.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">📞</div>
+                        <h3>24/7 Support</h3>
+                        <p>Directe hulp wanneer u dit nodig heeft. Remote support en indien nodig binnen 4 uur op locatie in Almere.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">📊</div>
+                        <h3>Monitoring</h3>
+                        <p>Proactieve monitoring van al uw systemen. Problemen worden vaak opgelost voordat u er last van heeft.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">💰</div>
+                        <h3>Transparante Kosten</h3>
+                        <p>Vaste maandelijkse tarieven zonder verrassingen. Inclusief alle updates, licenties en onderhoud.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="voordelen" class="trust-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Waarom Chris Networks?</h2>
+                    <p>Lokale service, persoonlijke aanpak en bewezen expertise</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🎯 Persoonlijke Aanpak</h3>
+                        <p>Als lokale IT-partner kennen wij uw bedrijf persoonlijk en leveren maatwerk oplossingen.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>⚡ Snelle Response</h3>
+                        <p>Gemiddelde responstijd van 15 minuten. Bij storing direct beschikbaar via telefoon.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💡 Proactief Onderhoud</h3>
+                        <p>Wij voorkomen problemen in plaats van ze op te lossen. Meer dan 95% uptime gegarandeerd.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div>
+                        <h2>Start vandaag met professioneel IT-beheer</h2>
+                        <p style="margin-bottom: 2rem;">Plan een gratis intake gesprek en ontdek hoe Chris Networks uw bedrijf kan ontzorgen.</p>
+                        
+                        <div class="contact-info">
+                            <h3>Direct Contact</h3>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <strong>Telefoon</strong><br>
+                                    <a href="tel:0614348398" style="color: white;">06-14348398</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <strong>Adres</strong><br>
+                                    Siennastraat 243<br>
+                                    1339 CX Almere
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">⏰</div>
+                                <div>
+                                    <strong>Beschikbaarheid</strong><br>
+                                    Ma-Vr: 8:00-18:00<br>
+                                    24/7 support voor klanten
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" action="/api/index.php" method="POST">
+                        <h3>Vraag Gratis Adviesgesprek Aan</h3>
+                        <div class="form-group">
+                            <label for="name">Naam *</label>
+                            <input type="text" id="name" name="name" required placeholder="Uw volledige naam">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Bedrijfsnaam</label>
+                            <input type="text" id="company" name="company" placeholder="Naam van uw bedrijf">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required placeholder="uw@email.nl">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefoon *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="06-12345678">
+                        </div>
+                        <div class="form-group">
+                            <label for="employees">Aantal medewerkers</label>
+                            <select id="employees" name="employees" style="width: 100%; padding: 0.75rem; border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; background: rgba(255,255,255,0.1); color: white;">
+                                <option value="">Selecteer aantal</option>
+                                <option value="1-5">1-5 medewerkers</option>
+                                <option value="6-15">6-15 medewerkers</option>
+                                <option value="16-50">16-50 medewerkers</option>
+                                <option value="50+">50+ medewerkers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Uw situatie (optioneel)</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Vertel ons kort over uw huidige IT-situatie..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Plan Gratis Adviesgesprek</button>
+                        <p style="font-size: 0.85rem; margin-top: 1rem; opacity: 0.8;">
+                            Door dit formulier te versturen gaat u akkoord met onze privacy voorwaarden.
+                        </p>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div>
-                <h5>Navigatie</h5>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#installatie">Installatie op maat</a></li>
-                    <li><a href="#onderhoud">Onderhoud & updates</a></li>
-                    <li><a href="#voordelen">Voordelen</a></li>
-                    <li><a href="#werkwijze">Werkwijze</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Diensten</h5>
-                <ul>
-                    <li><a href="#">Werkplekbeheer</a></li>
-                    <li><a href="#">Serverbeheer</a></li>
-                    <li><a href="#">Netwerkbeheer</a></li>
-                    <li><a href="#">VoIP Telefonie</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Contact</h5>
-                <address>
-                    Werkplekbeheer Almere BV<br>
-                    Bedrijfstraat 1, 1321 AA Almere<br>
-                    info@werkplekbeheer-almere.nl<br>
-                    036 123 4567
-                </address>
-            </div>
-        </div>
-        <div class="small">
-            © 2025 Werkplekbeheer Almere BV | Alle rechten voorbehouden
-        </div>
-    </footer>
+    <a href="tel:0614348398" class="sticky-cta">
+        📞 Direct Bellen
+    </a>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>
