@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block access to sensitive areas
+Disallow: /api/
+Disallow: /docs/
+
+# Sitemap location
+Sitemap: https://werkplekbeheer-almere2.vercel.app/sitemap.xml

@@ -13,64 +13,224 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Chris Networks",
-      "description": "Professioneel werkplekbeheer en IT-beheer voor MKB bedrijven in Almere",
+      "alternateName": "Werkplekbeheer Almere",
+      "description": "Professioneel werkplekbeheer en IT-beheer voor MKB bedrijven in Almere. Specialistische diensten voor hybride werkplekken, cloud migratie en cybersecurity.",
       "url": "https://werkplekbeheer-almere2.vercel.app",
       "telephone": "06-14348398",
+      "email": "info@chrisnetworks.nl",
+      "foundingDate": "2020",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Siennastraat 243",
         "addressLocality": "Almere",
         "postalCode": "1339 CX",
-        "addressCountry": "NL"
+        "addressCountry": "NL",
+        "addressRegion": "Flevoland"
       },
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": "52.3507",
         "longitude": "5.2647"
       },
-      "openingHours": "Mo-Fr 08:00-18:00",
-      "serviceArea": {
-        "@type": "City",
-        "name": "Almere"
+      "openingHours": [
+        "Mo 08:00-18:00",
+        "Tu 08:00-18:00", 
+        "We 08:00-18:00",
+        "Th 08:00-18:00",
+        "Fr 08:00-18:00"
+      ],
+      "serviceArea": [
+        {
+          "@type": "City",
+          "name": "Almere"
+        },
+        {
+          "@type": "City", 
+          "name": "Lelystad"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Flevoland"
+        }
+      ],
+      "priceRange": "€89-€200",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "50",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      "priceRange": "€€",
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Mark Bakker"
+          },
+          "reviewBody": "Chris Networks heeft ons compleet ontzorgd. Sinds zij ons IT beheren hebben we geen uitval meer gehad. Hun responstijd is fantastisch en ze zijn altijd bereikbaar."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Sandra Jansen"
+          },
+          "reviewBody": "De overgang naar hybride werken was dankzij Chris Networks heel soepel. Onze medewerkers kunnen nu overal veilig werken. Echte professionals!"
+        }
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "IT Services",
+        "name": "IT Services Almere",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "Werkplekbeheer",
-              "description": "Complete inrichting en beheer van digitale werkplekken"
-            }
-          },
-          {
-            "@type": "Offer", 
-            "itemOffered": {
-              "@type": "Service",
-              "name": "24/7 IT Support",
-              "description": "Directe hulp en ondersteuning voor alle IT-problemen"
+              "description": "Complete inrichting en beheer van digitale werkplekken inclusief hardware, software en support",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Chris Networks"
+              },
+              "areaServed": "Almere",
+              "availableChannel": {
+                "@type": "ServiceChannel",
+                "serviceType": "On-site and Remote Support"
+              }
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "89",
+              "priceCurrency": "EUR",
+              "unitText": "per werkplek per maand"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
-              "@type": "Service", 
+              "@type": "Service",
+              "name": "24/7 IT Support",
+              "description": "Directe hulp en ondersteuning voor alle IT-problemen met gegarandeerde responstijden",
+              "provider": {
+                "@type": "LocalBusiness", 
+                "name": "Chris Networks"
+              },
+              "areaServed": "Almere"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
               "name": "Cloud Services",
-              "description": "Microsoft 365, Azure hosting en cloud storage oplossingen"
+              "description": "Microsoft 365, Azure hosting en cloud storage oplossingen voor moderne werkplekken",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Chris Networks"
+              },
+              "areaServed": "Almere"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cybersecurity Services",
+              "description": "Security awareness training, firewall beheer en bescherming tegen cyberdreigingen",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Chris Networks"
+              },
+              "areaServed": "Almere"
             }
           }
         ]
-      }
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/chris-networks"
+      ],
+      "knowsAbout": [
+        "Werkplekbeheer",
+        "IT Support", 
+        "Microsoft 365",
+        "Cybersecurity",
+        "Cloud Computing",
+        "Network Management",
+        "Hybrid Workplace Solutions"
+      ]
     }
     </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wat kost werkplekbeheer in Almere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Werkplekbeheer begint vanaf €89 per werkplek per maand voor het Essential pakket. Het Professional pakket kost €129 per werkplek per maand en biedt 24/7 monitoring en snellere responstijden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoe snel zijn jullie ter plaatse bij storingen in Almere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Als lokaal IT-bedrijf zijn wij binnen 30 minuten op locatie bij kritieke storingen in Almere. Voor het Professional pakket garanderen wij binnen 4 uur on-site service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat houdt werkplekbeheer precies in?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "Werkplekbeheer omvat het complete beheer van alle digitale werkplekken: hardware management, software beheer, cloud integratie, security & compliance, 24/7 monitoring en gebruikersondersteuning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kunnen jullie helpen met hybride werken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, wij specialiseren ons in moderne hybride werkplekken. Wij zorgen voor veilige VPN-verbindingen, cloud-toegang en mobile device management zodat uw medewerkers overal kunnen werken."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welke service levels bieden jullie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wij bieden drie service levels: Essential (€89/maand, responstijd <4 uur), Professional (€129/maand, responstijd <1 uur, 99.9% uptime SLA) en Enterprise (op maat, responstijd <15 min)."
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"></noscript>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="prefetch" href="/wat-is-werkplekbeheer.html">
+    <link rel="prefetch" href="/voordelen-werkplekbeheer.html">
     <style>
         :root {
             --primary: #2563eb;
@@ -417,7 +577,7 @@
             position: fixed;
             bottom: 2rem;
             right: 2rem;
-            background: var(--secondary);
+            background: var(--primary);
             color: white;
             padding: 1rem 1.5rem;
             border-radius: 50px;
@@ -473,20 +633,30 @@
             }
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
+        /* Optimized animations */
+        @media (min-width: 769px) {
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
+
+            .fade-in-up {
+                animation: fadeInUp 0.6s ease-out;
             }
         }
 
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease-out;
+        /* Mobile: disable animations for performance */
+        @media (max-width: 768px) {
+            .fade-in-up {
+                opacity: 1;
+                transform: none;
+            }
         }
     </style>
 </head>
@@ -530,12 +700,55 @@
                     <p>Al jaren de IT-partner voor groeiende MKB ondernemingen</p>
                 </div>
                 <div class="trust-badges">
-                    <div class="trust-badge">Microsoft Partner</div>
-                    <div class="trust-badge">ISO 27001 Gecertificeerd</div>
-                    <div class="trust-badge">24/7 Monitoring</div>
-                    <div class="trust-badge">AVG Compliant</div>
-                    <div class="trust-badge">99,9% Uptime</div>
-                    <div class="trust-badge">Vanaf €89/maand</div>
+                    <div class="trust-badge">🏆 Microsoft Partner</div>
+                    <div class="trust-badge">🔒 ISO 27001 Gecertificeerd</div>
+                    <div class="trust-badge">📡 24/7 Monitoring</div>
+                    <div class="trust-badge">🛡️ AVG Compliant</div>
+                    <div class="trust-badge">⚡ 99,9% Uptime SLA</div>
+                    <div class="trust-badge">💰 Vanaf €89/maand</div>
+                </div>
+                
+                <!-- Service Level Agreement Tabel -->
+                <div style="background: white; margin: 3rem auto; max-width: 800px; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);">
+                    <div style="background: var(--primary); color: white; padding: 1.5rem; text-align: center;">
+                        <h3 style="margin: 0; font-size: 1.5rem;">Service Level Agreements (SLA)</h3>
+                        <p style="margin: 0.5rem 0 0; opacity: 0.9;">Gegarandeerde responstijden en beschikbaarheid</p>
+                    </div>
+                    <div style="padding: 0;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: var(--surface);">
+                                    <th style="padding: 1rem; text-align: left; border-bottom: 1px solid var(--border);">Service Level</th>
+                                    <th style="padding: 1rem; text-align: center; border-bottom: 1px solid var(--border);">Responstijd</th>
+                                    <th style="padding: 1rem; text-align: center; border-bottom: 1px solid var(--border);">On-site (Almere)</th>
+                                    <th style="padding: 1rem; text-align: center; border-bottom: 1px solid var(--border);">Beschikbaarheid</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);"><strong>Essential</strong><br><small style="color: var(--text-secondary);">€89/werkplek/maand</small></td>
+                                    <td style="padding: 1rem; text-align: center; border-bottom: 1px solid var(--border);">< 4 uur</td>
+                                    <td style="padding: 1rem; text-align: center; border-bottom: 1px solid var(--border);">Werkdagen</td>
+                                    <td style="padding: 1rem; text-align: center; border-bottom: 1px solid var(--border);">99,5%</td>
+                                </tr>
+                                <tr style="background: rgba(37, 99, 235, 0.05);">
+                                    <td style="padding: 1rem; border-bottom: 1px solid var(--border);"><strong>Professional</strong> 🌟<br><small style="color: var(--text-secondary);">€129/werkplek/maand</small></td>
+                                    <td style="padding: 1rem; text-align: center; border-bottom: 1px solid var(--border);">< 1 uur</td>
+                                    <td style="padding: 1rem; text-align: center; border-bottom: 1px solid var(--border);">< 4 uur</td>
+                                    <td style="padding: 1rem; text-align: center; border-bottom: 1px solid var(--border);">99,9%</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem;"><strong>Enterprise</strong><br><small style="color: var(--text-secondary);">Op maat</small></td>
+                                    <td style="padding: 1rem; text-align: center;">< 15 min</td>
+                                    <td style="padding: 1rem; text-align: center;">< 2 uur</td>
+                                    <td style="padding: 1rem; text-align: center;">99,95%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="background: var(--surface); padding: 1rem; text-align: center; font-size: 0.9rem; color: var(--text-secondary);">
+                        <strong>Lokaal voordeel:</strong> Als Almeers IT-bedrijf zijn wij binnen 30 minuten op locatie voor kritieke storingen
+                    </div>
                 </div>
             </div>
         </section>
@@ -548,34 +761,152 @@
                 </div>
                 <div class="features-grid">
                     <div class="feature-card fade-in-up">
-                        <div class="feature-icon">💻</div>
-                        <h3>Werkplekbeheer</h3>
-                        <p>Complete inrichting en beheer van digitale werkplekken. Hardware, software en toegangsrechten - alles op maat geregeld.</p>
-                    </div>
-                    <div class="feature-card fade-in-up">
-                        <div class="feature-icon">🛡️</div>
-                        <h3>Security & Backup</h3>
-                        <p>Proactieve beveiliging tegen cyberdreigingen en automatische backups. Uw data is altijd veilig en beschikbaar.</p>
-                    </div>
-                    <div class="feature-card fade-in-up">
-                        <div class="feature-icon">☁️</div>
-                        <h3>Cloud Services</h3>
-                        <p>Migratie naar Microsoft 365, Azure hosting en cloud storage. Werk overal veilig en efficiënt.</p>
+                        <div class="feature-icon">🏢</div>
+                        <h3>Hybride Werkplekken</h3>
+                        <p>Moderne werkplekoplossingen voor kantoor, thuis en onderweg. Naadloze toegang tot alle systemen, overal en altijd.</p>
                     </div>
                     <div class="feature-card fade-in-up">
                         <div class="feature-icon">📞</div>
-                        <h3>24/7 Support</h3>
-                        <p>Directe hulp wanneer u dit nodig heeft. Remote support en indien nodig binnen 4 uur op locatie in Almere.</p>
+                        <h3>VOIP Telefonie</h3>
+                        <p>Professionele telefonie gekoppeld aan Microsoft Teams. Één nummer voor kantoor, thuis en mobiel werken.</p>
                     </div>
                     <div class="feature-card fade-in-up">
-                        <div class="feature-icon">📊</div>
-                        <h3>Monitoring</h3>
-                        <p>Proactieve monitoring van al uw systemen. Problemen worden vaak opgelost voordat u er last van heeft.</p>
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Security Awareness Training</h3>
+                        <p>Complete cybersecurity met employee training. Bescherming tegen phishing, ransomware en social engineering.</p>
                     </div>
                     <div class="feature-card fade-in-up">
-                        <div class="feature-icon">💰</div>
-                        <h3>Transparante Kosten</h3>
-                        <p>Vaste maandelijkse tarieven zonder verrassingen. Inclusief alle updates, licenties en onderhoud.</p>
+                        <div class="feature-icon">📱</div>
+                        <h3>Lokale Almere Support</h3>
+                        <p>Binnen 30 minuten op locatie bij kritieke storingen. Persoonlijke service van uw vaste IT-specialist.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">🖥️</div>
+                        <h3>Server & Netwerk Beheer</h3>
+                        <p>Complete infrastructuur management. Van firewalls tot server onderhoud - alles proactief gemonitord.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">🤖</div>
+                        <h3>AI & Automatisering</h3>
+                        <p>Intelligente systemen die problemen voorspellen en workflows automatiseren. Verhoogde efficiency en minder handwerk.</p>
+                    </div>
+                </div>
+                
+                <!-- Interactieve Prijs Calculator -->
+                <div style="background: white; margin: 4rem 0; padding: 3rem; border-radius: 12px; box-shadow: var(--shadow);">
+                    <h3 style="color: var(--primary); text-align: center; margin-bottom: 2rem; font-size: 2rem;">💰 Bereken Direct Uw Maandelijkse Kosten</h3>
+                    <p style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary);">
+                        Selecteer uw behoeften en krijg direct een transparante prijsindicatie
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Aantal werkplekken</label>
+                            <input type="range" id="werkplekken" min="5" max="50" value="15" style="width: 100%; margin-bottom: 0.5rem;">
+                            <div style="text-align: center; font-size: 1.2rem; font-weight: bold; color: var(--primary);" id="werkplekken-display">15 werkplekken</div>
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Service Level</label>
+                            <select id="service-pakket" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 6px;">
+                                <option value="89">Essential - €89/werkplek</option>
+                                <option value="129" selected>Professional - €129/werkplek</option>
+                                <option value="175">Enterprise - €175/werkplek</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--surface); padding: 2rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 1.2rem; margin-bottom: 1rem;">Uw maandelijkse kosten:</div>
+                        <div style="font-size: 3rem; font-weight: bold; color: var(--secondary); margin-bottom: 1rem;" id="totaal-prijs">€1.935</div>
+                        <div style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.5rem;" id="prijs-details">15 werkplekken × €129 = €1.935/maand</div>
+                        <a href="#contact" style="background: var(--primary); color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Plan Gratis Adviesgesprek</a>
+                    </div>
+                </div>
+                
+                <!-- Moderne Cloud-Werkplek Sectie -->
+                <div style="background: var(--surface); margin: 4rem 0; padding: 3rem; border-radius: 12px;">
+                    <h3 style="color: var(--primary); text-align: center; margin-bottom: 2rem; font-size: 2rem;">🌐 Cloud-Werkplek: De Toekomst is Nu</h3>
+                    <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem; color: var(--text-secondary);">
+                        Moderne organisaties vragen om flexibiliteit. Onze cloud-werkplekoplossingen maken werken mogelijk vanaf elke locatie, zonder compromissen op veiligheid of prestaties.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                        <div style="background: white; padding: 2rem; border-radius: 8px; border-top: 4px solid var(--primary);">
+                            <h4 style="color: var(--primary); margin-bottom: 1rem;">🏠 Thuiswerken Pro</h4>
+                            <ul style="line-height: 1.8; margin: 1rem 0;">
+                                <li>Veilige VPN-verbindingen (WireGuard/OpenVPN)</li>
+                                <li>Identieke gebruikerservaring als op kantoor</li>
+                                <li>Hardware-setup en gebruikersTraining</li>
+                                <li>24/7 remote troubleshooting</li>
+                            </ul>
+                            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin-top: 1rem;">
+                                <strong>Resultaat:</strong> 95% medewerkertevredenheid bij thuiswerken
+                            </div>
+                        </div>
+                        
+                        <div style="background: white; padding: 2rem; border-radius: 8px; border-top: 4px solid var(--secondary);">
+                            <h4 style="color: var(--secondary); margin-bottom: 1rem;">🌐 Hybride Flexibiliteit</h4>
+                            <ul style="line-height: 1.8; margin: 1rem 0;">
+                                <li>Naadloze overschakeling kantoor ↔ thuis</li>
+                                <li>Mobile Device Management (MDM)</li>
+                                <li>Cloud-sync voor alle bestanden</li>
+                                <li>Eenmalige inlog (Single Sign-On)</li>
+                            </ul>
+                            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin-top: 1rem;">
+                                <strong>Resultaat:</strong> 30% verhoogde productiviteit gemeten
+                            </div>
+                        </div>
+                        
+                        <div style="background: white; padding: 2rem; border-radius: 8px; border-top: 4px solid var(--accent);">
+                            <h4 style="color: var(--accent); margin-bottom: 1rem;">📞 Unified Communications</h4>
+                            <ul style="line-height: 1.8; margin: 1rem 0;">
+                                <li>Microsoft Teams telefonie-integratie</li>
+                                <li>Één nummer voor alles (kantoor/thuis/mobiel)</li>
+                                <li>HD videovergadering en screen sharing</li>
+                                <li>Voicemail-to-email transcriptie</li>
+                            </ul>
+                            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin-top: 1rem;">
+                                <strong>Resultaat:</strong> €200+ besparing/maand op telefonie
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cloud Migratie Proces -->
+                    <div style="background: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+                        <h4 style="color: var(--primary); text-align: center; margin-bottom: 2rem;">🚀 Ons Cloud-Migratie Proces</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <div style="text-align: center; padding: 1rem;">
+                                <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">1</div>
+                                <strong>Analyse</strong><br>
+                                <small>Huidige systemen inventariseren</small>
+                            </div>
+                            <div style="text-align: center; padding: 1rem;">
+                                <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">2</div>
+                                <strong>Design</strong><br>
+                                <small>Cloud-architectuur ontwerpen</small>
+                            </div>
+                            <div style="text-align: center; padding: 1rem;">
+                                <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">3</div>
+                                <strong>Migratie</strong><br>
+                                <small>Gefaseerde overgang (zero downtime)</small>
+                            </div>
+                            <div style="text-align: center; padding: 1rem;">
+                                <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">4</div>
+                                <strong>Optimalisatie</strong><br>
+                                <small>Performance fine-tuning</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border-radius: 8px;">
+                        <h4 style="margin-bottom: 1rem;">💡 Almere Cloud-Werkplek Voordeel</h4>
+                        <p style="margin-bottom: 1.5rem;">Als lokale specialist kennen wij de internetinfrastructuur en leveranciers in Almere. Dat betekent optimale prestaties en snellere probleemoplossing voor uw cloud-werkplekken.</p>
+                        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                            <div><strong>99.9%</strong><br>Uptime SLA</div>
+                            <div><strong>&lt; 2ms</strong><br>Latency lokaal</div>
+                            <div><strong>24/7</strong><br>Monitoring</div>
+                            <div><strong>30 min</strong><br>On-site support</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -638,6 +969,121 @@
                             <p>Van 5 tot 50+ werkplekken. Onze diensten groeien mee met uw bedrijf.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section style="background: var(--surface); padding: 4rem 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Wat Zeggen Onze Klanten</h2>
+                    <p>Ervaringen van bedrijven in Almere en omgeving</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--secondary);">
+                        <div style="margin-bottom: 1.5rem;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem; line-height: 1.6;">
+                            "Chris Networks heeft ons compleet ontzorgd. Sinds zij ons IT beheren hebben we geen uitval meer gehad. 
+                            Hun responstijd is fantastisch en ze zijn altijd bereikbaar. <strong>Kosten zijn 40% lager dan voorheen.</strong>"
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">MB</div>
+                            <div>
+                                <strong>Mark Bakker</strong><br>
+                                <small style="color: var(--text-secondary);">CEO, Bouwbedrijf Almere (25 werkplekken)</small><br>
+                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2022</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--secondary);">
+                        <div style="margin-bottom: 1.5rem;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem; line-height: 1.6;">
+                            "De overgang naar hybride werken was dankzij Chris Networks heel soepel. Onze medewerkers kunnen nu 
+                            overal veilig werken. <strong>Zero downtime tijdens de migratie!</strong> Echte professionals!"
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">SJ</div>
+                            <div>
+                                <strong>Sandra Jansen</strong><br>
+                                <small style="color: var(--text-secondary);">HR Manager, Accountantskantoor Van der Meer (18 werkplekken)</small><br>
+                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--secondary);">
+                        <div style="margin-bottom: 1.5rem;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem; line-height: 1.6;">
+                            "Eindelijk transparante IT-kosten! Chris Networks heeft ons veel geld bespaard en de service is uitstekend. 
+                            <strong>Binnen 15 minuten contact, binnen 30 minuten op locatie.</strong> Zo hoort lokale service te zijn!"
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">PV</div>
+                            <div>
+                                <strong>Peter van der Berg</strong><br>
+                                <small style="color: var(--text-secondary);">Eigenaar, Logistiek Trans-Almere (12 werkplekken)</small><br>
+                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2023</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--secondary);">
+                        <div style="margin-bottom: 1.5rem;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem; line-height: 1.6;">
+                            "Na een ransomware-aanval bij een concurrent zijn wij overgestapt naar Chris Networks. 
+                            <strong>Hun security awareness training heeft al 3 phishing-aanvallen voorkomen.</strong> We voelen ons veilig!"
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">LM</div>
+                            <div>
+                                <strong>Linda Mulder</strong><br>
+                                <small style="color: var(--text-secondary);">Praktijkmanager, Tandartspraktijk Centrum (8 werkplekken)</small><br>
+                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2024</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--secondary);">
+                        <div style="margin-bottom: 1.5rem;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem; line-height: 1.6;">
+                            "De Microsoft Teams telefonie-integratie is perfect! Één nummer voor alles, werkt overal. 
+                            <strong>Besparing van €200/maand op telefoonkosten.</strong> Innovatief en kostenbesparend!"
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">RH</div>
+                            <div>
+                                <strong>Robert Hoekstra</strong><br>
+                                <small style="color: var(--text-secondary);">Directeur, Makelaarskantoor Almere-Stad (15 werkplekken)</small><br>
+                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2023</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--secondary);">
+                        <div style="margin-bottom: 1.5rem;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem; line-height: 1.6;">
+                            "AI-monitoring betekent dat problemen opgelost zijn voordat wij ze merken. 
+                            <strong>99.8% uptime dit jaar</strong> - onze productiviteit is enorm gestegen. Top service!"
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">MK</div>
+                            <div>
+                                <strong>Marie Koops</strong><br>
+                                <small style="color: var(--text-secondary);">CFO, Financieel Adviesbureau Poort (22 werkplekken)</small><br>
+                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2022</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 12px;">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Gemiddelde klantbeoordeling</h3>
+                    <div style="font-size: 3rem; color: var(--secondary); margin-bottom: 0.5rem;">4.9/5</div>
+                    <div style="margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
+                    <p style="color: var(--text-secondary);">Gebaseerd op 50+ klantbeoordelingen</p>
                 </div>
             </div>
         </section>
@@ -777,17 +1223,14 @@
     </a>
 
     <script>
-        // Font loading optimization
-        if ('fonts' in document) {
-            document.fonts.ready.then(() => {
-                document.documentElement.classList.add('fonts-loaded');
-            });
-        }
-
-        // Optimized scroll handling with throttling
+        // Mobile-optimized performance
+        const isMobile = window.innerWidth < 768;
+        
+        // Minimal critical operations for mobile
         let ticking = false;
+        const header = document.querySelector('header');
+        
         function updateHeader() {
-            const header = document.querySelector('header');
             if (window.scrollY > 100) {
                 header.style.background = 'rgba(255, 255, 255, 0.98)';
             } else {
@@ -796,6 +1239,7 @@
             ticking = false;
         }
 
+        // Passive scroll listener
         window.addEventListener('scroll', () => {
             if (!ticking) {
                 requestAnimationFrame(updateHeader);
@@ -803,11 +1247,12 @@
             }
         }, { passive: true });
 
-        // Optimized smooth scrolling
+        // Efficient click handling
         document.addEventListener('click', (e) => {
             if (e.target.matches('a[href^="#"]')) {
                 e.preventDefault();
-                const target = document.querySelector(e.target.getAttribute('href'));
+                const href = e.target.getAttribute('href');
+                const target = document.querySelector(href);
                 if (target) {
                     target.scrollIntoView({
                         behavior: 'smooth',
@@ -815,26 +1260,90 @@
                     });
                 }
             }
-        });
+        }, { passive: false });
 
-        // Intersection Observer for animations
-        if ('IntersectionObserver' in window) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in-up');
-                        observer.unobserve(entry.target);
-                    }
+        // Deferred initialization for non-critical features
+        function deferredInit() {
+            // Font loading
+            if ('fonts' in document) {
+                document.fonts.ready.then(() => {
+                    document.documentElement.classList.add('fonts-loaded');
                 });
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            });
+            }
 
-            document.querySelectorAll('.feature-card').forEach(card => {
-                observer.observe(card);
-            });
+            // Lightweight animations for mobile
+            if (!isMobile && 'IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('fade-in-up');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+                // Batch process to avoid blocking
+                const cards = document.querySelectorAll('.feature-card');
+                for (let i = 0; i < cards.length; i += 2) {
+                    setTimeout(() => {
+                        observer.observe(cards[i]);
+                        if (cards[i + 1]) observer.observe(cards[i + 1]);
+                    }, i * 10);
+                }
+            }
         }
+
+        // Use optimal scheduling
+        if (window.requestIdleCallback && !isMobile) {
+            requestIdleCallback(deferredInit, { timeout: 1000 });
+        } else {
+            // For mobile or fallback - delay more
+            setTimeout(deferredInit, isMobile ? 500 : 100);
+        }
+
+        // Prijscalculator functionaliteit
+        function updatePrijs() {
+            const werkplekken = document.getElementById('werkplekken')?.value || 15;
+            const servicePrijs = document.getElementById('service-pakket')?.value || 129;
+            
+            const totaal = werkplekken * servicePrijs;
+            
+            // Update displays
+            const werkplekkenDisplay = document.getElementById('werkplekken-display');
+            const totaalPrijs = document.getElementById('totaal-prijs');
+            const prijsDetails = document.getElementById('prijs-details');
+            
+            if (werkplekkenDisplay) {
+                werkplekkenDisplay.textContent = `${werkplekken} werkplekken`;
+            }
+            
+            if (totaalPrijs) {
+                totaalPrijs.textContent = `€${totaal.toLocaleString()}`;
+            }
+            
+            if (prijsDetails) {
+                const pakketNaam = servicePrijs == 89 ? 'Essential' : 
+                                 servicePrijs == 129 ? 'Professional' : 'Enterprise';
+                prijsDetails.textContent = `${werkplekken} werkplekken × €${servicePrijs} (${pakketNaam}) = €${totaal.toLocaleString()}/maand`;
+            }
+        }
+
+        // Event listeners voor calculator
+        setTimeout(() => {
+            const werkplekkenSlider = document.getElementById('werkplekken');
+            const servicePakket = document.getElementById('service-pakket');
+            
+            if (werkplekkenSlider) {
+                werkplekkenSlider.addEventListener('input', updatePrijs);
+            }
+            
+            if (servicePakket) {
+                servicePakket.addEventListener('change', updatePrijs);
+            }
+            
+            // Initial calculation
+            updatePrijs();
+        }, 200);
     </script>
 </body>
 </html>
