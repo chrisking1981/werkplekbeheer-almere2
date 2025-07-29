@@ -233,12 +233,12 @@
     <link rel="prefetch" href="/voordelen-werkplekbeheer.html">
     <style>
         :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --secondary: #10b981;
-            --accent: #f59e0b;
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --secondary: #059669;
+            --accent: #d97706;
             --text-primary: #1f2937;
-            --text-secondary: #6b7280;
+            --text-secondary: #4b5563;
             --background: #ffffff;
             --surface: #f8fafc;
             --border: #e5e7eb;
@@ -712,7 +712,7 @@
                 <div style="background: white; margin: 3rem auto; max-width: 800px; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);">
                     <div style="background: var(--primary); color: white; padding: 1.5rem; text-align: center;">
                         <h3 style="margin: 0; font-size: 1.5rem;">Service Level Agreements (SLA)</h3>
-                        <p style="margin: 0.5rem 0 0; opacity: 0.9;">Gegarandeerde responstijden en beschikbaarheid</p>
+                        <p style="margin: 0.5rem 0 0;">Gegarandeerde responstijden en beschikbaarheid</p>
                     </div>
                     <div style="padding: 0;">
                         <table style="width: 100%; border-collapse: collapse;">
@@ -801,13 +801,13 @@
                     
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
                         <div>
-                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Aantal werkplekken</label>
-                            <input type="range" id="werkplekken" min="5" max="50" value="15" style="width: 100%; margin-bottom: 0.5rem;">
-                            <div style="text-align: center; font-size: 1.2rem; font-weight: bold; color: var(--primary);" id="werkplekken-display">15 werkplekken</div>
+                            <label for="werkplekken" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Aantal werkplekken</label>
+                            <input type="range" id="werkplekken" min="5" max="50" value="15" style="width: 100%; margin-bottom: 0.5rem;" aria-label="Aantal werkplekken slider">
+                            <div style="text-align: center; font-size: 1.2rem; font-weight: bold; color: var(--primary);" id="werkplekken-display" aria-live="polite">15 werkplekken</div>
                         </div>
                         <div>
-                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Service Level</label>
-                            <select id="service-pakket" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 6px;">
+                            <label for="service-pakket" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Service Level</label>
+                            <select id="service-pakket" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 6px;" aria-label="Selecteer service level pakket">
                                 <option value="89">Essential - €89/werkplek</option>
                                 <option value="129" selected>Professional - €129/werkplek</option>
                                 <option value="175">Enterprise - €175/werkplek</option>
@@ -817,7 +817,7 @@
                     
                     <div style="background: var(--surface); padding: 2rem; border-radius: 8px; text-align: center;">
                         <div style="font-size: 1.2rem; margin-bottom: 1rem;">Uw maandelijkse kosten:</div>
-                        <div style="font-size: 3rem; font-weight: bold; color: var(--secondary); margin-bottom: 1rem;" id="totaal-prijs">€1.935</div>
+                        <div style="font-size: 3rem; font-weight: bold; color: var(--primary); margin-bottom: 1rem;" id="totaal-prijs">€1.935</div>
                         <div style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.5rem;" id="prijs-details">15 werkplekken × €129 = €1.935/maand</div>
                         <a href="#contact" style="background: var(--primary); color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Plan Gratis Adviesgesprek</a>
                     </div>
@@ -845,7 +845,7 @@
                         </div>
                         
                         <div style="background: white; padding: 2rem; border-radius: 8px; border-top: 4px solid var(--secondary);">
-                            <h4 style="color: var(--secondary); margin-bottom: 1rem;">🌐 Hybride Flexibiliteit</h4>
+                            <h4 style="color: var(--primary); margin-bottom: 1rem;">🌐 Hybride Flexibiliteit</h4>
                             <ul style="line-height: 1.8; margin: 1rem 0;">
                                 <li>Naadloze overschakeling kantoor ↔ thuis</li>
                                 <li>Mobile Device Management (MDM)</li>
@@ -858,7 +858,7 @@
                         </div>
                         
                         <div style="background: white; padding: 2rem; border-radius: 8px; border-top: 4px solid var(--accent);">
-                            <h4 style="color: var(--accent); margin-bottom: 1rem;">📞 Unified Communications</h4>
+                            <h4 style="color: var(--primary); margin-bottom: 1rem;">📞 Unified Communications</h4>
                             <ul style="line-height: 1.8; margin: 1rem 0;">
                                 <li>Microsoft Teams telefonie-integratie</li>
                                 <li>Één nummer voor alles (kantoor/thuis/mobiel)</li>
@@ -993,7 +993,7 @@
                             <div>
                                 <strong>Mark Bakker</strong><br>
                                 <small style="color: var(--text-secondary);">CEO, Bouwbedrijf Almere (25 werkplekken)</small><br>
-                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2022</small>
+                                <small style="color: var(--primary); font-weight: 600;">Klant sinds 2022</small>
                             </div>
                         </div>
                     </div>
@@ -1009,7 +1009,7 @@
                             <div>
                                 <strong>Sandra Jansen</strong><br>
                                 <small style="color: var(--text-secondary);">HR Manager, Accountantskantoor Van der Meer (18 werkplekken)</small><br>
-                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2021</small>
+                                <small style="color: var(--primary); font-weight: 600;">Klant sinds 2021</small>
                             </div>
                         </div>
                     </div>
@@ -1025,7 +1025,7 @@
                             <div>
                                 <strong>Peter van der Berg</strong><br>
                                 <small style="color: var(--text-secondary);">Eigenaar, Logistiek Trans-Almere (12 werkplekken)</small><br>
-                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2023</small>
+                                <small style="color: var(--primary); font-weight: 600;">Klant sinds 2023</small>
                             </div>
                         </div>
                     </div>
@@ -1041,7 +1041,7 @@
                             <div>
                                 <strong>Linda Mulder</strong><br>
                                 <small style="color: var(--text-secondary);">Praktijkmanager, Tandartspraktijk Centrum (8 werkplekken)</small><br>
-                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2024</small>
+                                <small style="color: var(--primary); font-weight: 600;">Klant sinds 2024</small>
                             </div>
                         </div>
                     </div>
@@ -1057,7 +1057,7 @@
                             <div>
                                 <strong>Robert Hoekstra</strong><br>
                                 <small style="color: var(--text-secondary);">Directeur, Makelaarskantoor Almere-Stad (15 werkplekken)</small><br>
-                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2023</small>
+                                <small style="color: var(--primary); font-weight: 600;">Klant sinds 2023</small>
                             </div>
                         </div>
                     </div>
@@ -1073,7 +1073,7 @@
                             <div>
                                 <strong>Marie Koops</strong><br>
                                 <small style="color: var(--text-secondary);">CFO, Financieel Adviesbureau Poort (22 werkplekken)</small><br>
-                                <small style="color: var(--secondary); font-weight: 600;">Klant sinds 2022</small>
+                                <small style="color: var(--primary); font-weight: 600;">Klant sinds 2022</small>
                             </div>
                         </div>
                     </div>
@@ -1081,7 +1081,7 @@
                 
                 <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 12px;">
                     <h3 style="color: var(--primary); margin-bottom: 1rem;">Gemiddelde klantbeoordeling</h3>
-                    <div style="font-size: 3rem; color: var(--secondary); margin-bottom: 0.5rem;">4.9/5</div>
+                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 0.5rem;">4.9/5</div>
                     <div style="margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
                     <p style="color: var(--text-secondary);">Gebaseerd op 50+ klantbeoordelingen</p>
                 </div>
