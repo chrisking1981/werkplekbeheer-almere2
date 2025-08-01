@@ -1,58 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/</loc>
+        <loc>https://werkplekbeheeralmere.nl/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/wat-is-werkplekbeheer</loc>
+        <loc>https://werkplekbeheeralmere.nl/wat-is-werkplekbeheer</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/voordelen-werkplekbeheer</loc>
+        <loc>https://werkplekbeheeralmere.nl/voordelen-werkplekbeheer</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/werkwijze</loc>
+        <loc>https://werkplekbeheeralmere.nl/werkwijze</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/kosten-werkplekbeheer</loc>
+        <loc>https://werkplekbeheeralmere.nl/kosten-werkplekbeheer</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/digitale-werkplek</loc>
+        <loc>https://werkplekbeheeralmere.nl/digitale-werkplek</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/beveiliging-backup</loc>
+        <loc>https://werkplekbeheeralmere.nl/beveiliging-backup</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/netwerkbeheer</loc>
+        <loc>https://werkplekbeheeralmere.nl/netwerkbeheer</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/systeembeheer</loc>
+        <loc>https://werkplekbeheeralmere.nl/systeembeheer</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/thuiswerkplek</loc>
+        <loc>https://werkplekbeheeralmere.nl/thuiswerkplek</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://werkplekbeheer-almere2.vercel.app/support-247</loc>
+        <loc>https://werkplekbeheeralmere.nl/support-247</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog/remote-support-verwachtingen</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog/waarom-periodiek-onderhoud-essentieel</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog/inrichting-digitale-werkplek</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog/werkplekbeheer-vs-systeembeheer</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog/kosten-werkplekbeheer-uitgelegd</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog/voordelen-werkplekbeheer-mkb</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog/wat-is-werkplekbeheer</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog/beveiliging-werkplekken-2025</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://werkplekbeheeralmere.nl/blog/wifi-netwerkproblemen-kantoor</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
 </urlset>
