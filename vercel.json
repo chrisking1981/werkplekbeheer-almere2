@@ -24,6 +24,30 @@
     {
       "source": "/kosten-werkplekbeheer",
       "destination": "/kosten-werkplekbeheer.html"
+    },
+    {
+      "source": "/digitale-werkplek",
+      "destination": "/digitale-werkplek.html"
+    },
+    {
+      "source": "/beveiliging-backup",
+      "destination": "/beveiliging-backup.html"
+    },
+    {
+      "source": "/netwerkbeheer",
+      "destination": "/netwerkbeheer.html"
+    },
+    {
+      "source": "/systeembeheer",
+      "destination": "/systeembeheer.html"
+    },
+    {
+      "source": "/thuiswerkplek",
+      "destination": "/thuiswerkplek.html"
+    },
+    {
+      "source": "/support-247",
+      "destination": "/support-247.html"
     }
   ],
   "headers": [

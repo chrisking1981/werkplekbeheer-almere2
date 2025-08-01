@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netwerkbeheer Almere | Zakelijke WiFi & Netwerk Optimalisatie | Chris Networks</title>
+    <meta name="description" content="★ Netwerkbeheer Almere ✓ Zakelijke WiFi installatie ✓ Netwerk optimalisatie ✓ Access points ✓ VPN configuratie ✓ Lokale netwerk experts voor MKB">
+    <meta name="keywords" content="netwerkbeheer Almere, zakelijke wifi, netwerk optimalisatie, access points, trage wifi oplossen, UniFi netwerk">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="EaJJFHnWk005kbsnOiQMtCcdASqkT_DXZrK4YvJekuI">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8QSY1HVGL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M8QSY1HVGL');
+    </script>
+    
+    <!-- Structured Data for Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Netwerkbeheer Services",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Chris Networks",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Siennastraat 243",
+          "addressLocality": "Almere",
+          "postalCode": "1339 CX",
+          "addressRegion": "Flevoland",
+          "addressCountry": "NL"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Almere"
+      },
+      "description": "Professioneel netwerkbeheer en zakelijke WiFi oplossingen voor MKB bedrijven in Almere. Specialist in UniFi, netwerk optimalisatie en VPN configuratie.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "199",
+        "highPrice": "799",
+        "priceCurrency": "EUR",
+        "offerCount": "3"
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Waarom is mijn zakelijke WiFi zo traag?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trage WiFi wordt vaak veroorzaakt door verouderde apparatuur, verkeerde plaatsing van access points, interferentie of te veel gebruikers op één netwerk. Wij voeren een gratis WiFi scan uit om de oorzaak te vinden en op te lossen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat kost professioneel netwerkbeheer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Netwerkbeheer kost vanaf €199 per maand voor een klein kantoor (tot 20 gebruikers). Dit is inclusief monitoring, onderhoud, security updates en support. Grotere netwerken vanaf €399 per maand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welke WiFi apparatuur raden jullie aan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Voor zakelijke omgevingen adviseren wij UniFi of Aruba access points. Deze bieden enterprise-grade prestaties, centrale beheer mogelijkheden en uitstekende betrouwbaarheid tegen betaalbare prijzen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoe lang duurt een netwerk upgrade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Een complete netwerk upgrade duurt gemiddeld 1-2 dagen voor een MKB kantoor. We plannen de werkzaamheden buiten kantooruren om downtime te minimaliseren. Kleine aanpassingen kunnen vaak binnen enkele uren."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <style>
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --secondary: #3b82f6;
+            --accent: #10b981;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            --gradient-success: linear-gradient(135deg, #10b981 0%, #22c55e 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            background: var(--background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--gradient);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 5rem;
+            background: linear-gradient(135deg, #dbeafe 0%, #e0f2fe 100%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Problem Banner */
+        .problem-banner {
+            background: var(--warning);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .problem-banner a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Network Stats */
+        .network-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .network-stat {
+            text-align: center;
+        }
+
+        .network-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .network-label {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Problems Section */
+        .problems {
+            padding: 5rem 0;
+            background: var(--surface);
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .problem-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--warning);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .problem-card h3 {
+            color: var(--warning);
+            margin-bottom: 1rem;
+        }
+
+        .problem-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .solution {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+
+        .service-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-card li::before {
+            content: "📡";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Equipment Section */
+        .equipment {
+            padding: 5rem 0;
+            background: var(--surface);
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .equipment-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .equipment-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .equipment-image {
+            width: 100px;
+            height: 100px;
+            background: var(--gradient);
+            margin: 0 auto 1rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .equipment-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .equipment-price {
+            color: var(--primary);
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 5rem 0;
+        }
+
+        .process-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .process-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 5rem 0;
+            background: var(--surface);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: "Populair";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .pricing-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 0;
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .network-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="problem-banner">
+        📶 WiFi problemen op kantoor? - <a href="#contact">Gratis WiFi scan aanvragen</a>
+    </div>
+
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Chris Networks</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/wat-is-werkplekbeheer">Werkplekbeheer</a></li>
+                <li><a href="/#diensten" class="active">Diensten</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/kosten-werkplekbeheer">Kosten</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="tel:0614348398" class="cta-button">📞 06-14348398</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Netwerkbeheer Almere</h1>
+                    <p>Trage WiFi? Video calls die wegvallen? Wij lossen uw netwerkproblemen op met professioneel netwerkbeheer en moderne WiFi oplossingen.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Vraag gratis WiFi scan aan</a>
+                        <a href="#problems" class="btn-secondary">Bekijk veelvoorkomende problemen</a>
+                    </div>
+                    <div class="network-stats">
+                        <div class="network-stat">
+                            <div class="network-number">500+</div>
+                            <div class="network-label">Netwerken beheerd</div>
+                        </div>
+                        <div class="network-stat">
+                            <div class="network-number">99.9%</div>
+                            <div class="network-label">Netwerk uptime</div>
+                        </div>
+                        <div class="network-stat">
+                            <div class="network-number">&lt;30min</div>
+                            <div class="network-label">Response tijd</div>
+                        </div>
+                        <div class="network-stat">
+                            <div class="network-number">10x</div>
+                            <div class="network-label">Snellere WiFi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Network diagram illustration placeholder -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="problems" id="problems">
+        <div class="container">
+            <div class="section-header">
+                <h2>Herkenbare Netwerkproblemen?</h2>
+                <p>Deze klachten horen wij dagelijks van MKB bedrijven in Almere</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>🐌 "WiFi is traag"</h3>
+                    <p>Medewerkers klagen over trage internet snelheden, vooral 's middags wanneer iedereen online is.</p>
+                    <p class="solution">✅ Oplossing: Enterprise access points met load balancing</p>
+                </div>
+                <div class="problem-card">
+                    <h3>📹 "Video calls vallen weg"</h3>
+                    <p>Teams of Zoom meetings haperen constant, belangrijk klantcontact wordt verstoord.</p>
+                    <p class="solution">✅ Oplossing: QoS configuratie en bandwidth management</p>
+                </div>
+                <div class="problem-card">
+                    <h3>🚫 "Dode hoeken in kantoor"</h3>
+                    <p>In vergaderzalen of bepaalde ruimtes is geen of heel slecht WiFi bereik.</p>
+                    <p class="solution">✅ Oplossing: WiFi heatmap analyse en extra access points</p>
+                </div>
+                <div class="problem-card">
+                    <h3>🔐 "Gasten WiFi werkt niet"</h3>
+                    <p>Bezoekers kunnen niet inloggen of hebben geen internet toegang op het gasten netwerk.</p>
+                    <p class="solution">✅ Oplossing: Gescheiden VLAN's met captive portal</p>
+                </div>
+                <div class="problem-card">
+                    <h3>⚡ "Netwerk valt regelmatig uit"</h3>
+                    <p>Willekeurige netwerk storingen die productiviteit verstoren zonder duidelijke oorzaak.</p>
+                    <p class="solution">✅ Oplossing: 24/7 monitoring en proactief onderhoud</p>
+                </div>
+                <div class="problem-card">
+                    <h3>🏠 "Thuiswerkers kunnen niet bij bestanden"</h3>
+                    <p>Medewerkers thuis hebben geen veilige toegang tot bedrijfsnetwerk en servers.</p>
+                    <p class="solution">✅ Oplossing: VPN configuratie of cloud migratie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Complete Netwerkbeheer Oplossingen</h2>
+                <p>Van design tot implementatie en dagelijks beheer</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📡</div>
+                    <h3>Zakelijke WiFi</h3>
+                    <ul>
+                        <li>Enterprise-grade access points</li>
+                        <li>Volledige kantoor dekking</li>
+                        <li>Seamless roaming tussen AP's</li>
+                        <li>Gasten netwerk met portal</li>
+                        <li>Band steering & load balancing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Netwerk Optimalisatie</h3>
+                    <ul>
+                        <li>Performance analyse & tuning</li>
+                        <li>QoS voor video conferencing</li>
+                        <li>VLAN segmentatie</li>
+                        <li>Bandwidth management</li>
+                        <li>Traffic prioritering</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Kantoor Bekabeling</h3>
+                    <ul>
+                        <li>CAT6/CAT6A installatie</li>
+                        <li>Patch kast inrichting</li>
+                        <li>Wandcontactdoos montage</li>
+                        <li>Kabel certificering</li>
+                        <li>Documentatie & labels</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>VPN & Remote Access</h3>
+                    <ul>
+                        <li>Site-to-site VPN</li>
+                        <li>Client VPN voor thuiswerkers</li>
+                        <li>Multi-factor authenticatie</li>
+                        <li>Split tunneling configuratie</li>
+                        <li>Always-on VPN policies</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Monitoring & Beheer</h3>
+                    <ul>
+                        <li>24/7 netwerk monitoring</li>
+                        <li>Proactieve alerts</li>
+                        <li>Automatische firmware updates</li>
+                        <li>Performance rapportages</li>
+                        <li>Capacity planning</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Switches & Routers</h3>
+                    <ul>
+                        <li>Managed switch configuratie</li>
+                        <li>PoE voor IP telefonie</li>
+                        <li>Link aggregation (LAG)</li>
+                        <li>Spanning tree protocol</li>
+                        <li>Router optimalisatie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipment">
+        <div class="container">
+            <div class="section-header">
+                <h2>Enterprise WiFi Apparatuur</h2>
+                <p>Wij werken met bewezen technologie van topmerken</p>
+            </div>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-image">📶</div>
+                    <h3>UniFi Access Points</h3>
+                    <p>WiFi 6 technologie voor maximale snelheid en capaciteit</p>
+                    <div class="equipment-price">vanaf €149</div>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-image">🔌</div>
+                    <h3>PoE Switches</h3>
+                    <p>Managed switches met Power over Ethernet voor clean installaties</p>
+                    <div class="equipment-price">vanaf €399</div>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-image">🛡️</div>
+                    <h3>Security Gateway</h3>
+                    <p>Enterprise firewall met VPN en threat management</p>
+                    <div class="equipment-price">vanaf €299</div>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-image">☁️</div>
+                    <h3>Cloud Controller</h3>
+                    <p>Centraal beheer van al uw netwerk componenten</p>
+                    <div class="equipment-price">vanaf €99/mnd</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Van WiFi Problemen naar Stabiel Netwerk</h2>
+                <p>Ons bewezen proces voor netwerkoptimalisatie</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Gratis WiFi Scan</h3>
+                        <p>We meten signaalsterkte, interferentie en snelheden door uw hele kantoor. U krijgt een heatmap met probleemgebieden.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Netwerk Design</h3>
+                        <p>Op basis van de scan maken we een optimaal netwerkontwerp met juiste plaatsing van access points en switches.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Installatie & Configuratie</h3>
+                        <p>Professionele installatie buiten kantooruren. Inclusief bekabeling, configuratie en optimalisatie.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Monitoring & Onderhoud</h3>
+                        <p>24/7 monitoring met proactief beheer. Wij lossen problemen vaak op voordat u ze merkt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Netwerkbeheer Pakketten</h2>
+                <p>Transparante prijzen, geen verborgen kosten</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Klein Kantoor</h3>
+                        <div class="pricing-price">€199<span>/maand</span></div>
+                        <p style="color: var(--text-secondary);">Tot 20 gebruikers</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Tot 3 access points</li>
+                        <li>✓ 1 managed switch</li>
+                        <li>✓ Basis firewall</li>
+                        <li>✓ Monitoring kantooruren</li>
+                        <li>✓ Maandelijkse updates</li>
+                        <li>✓ Remote support</li>
+                        <li>✓ Response tijd &lt;4 uur</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Start Klein Kantoor</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Middelgroot Kantoor</h3>
+                        <div class="pricing-price">€399<span>/maand</span></div>
+                        <p style="color: var(--text-secondary);">20-50 gebruikers</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Tot 8 access points</li>
+                        <li>✓ 2-3 managed switches</li>
+                        <li>✓ Advanced firewall + VPN</li>
+                        <li>✓ 24/7 monitoring</li>
+                        <li>✓ Wekelijkse updates</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Response tijd &lt;1 uur</li>
+                        <li>✓ Quarterly review</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Start Middelgroot</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Groot Kantoor</h3>
+                        <div class="pricing-price">€799<span>/maand</span></div>
+                        <p style="color: var(--text-secondary);">50+ gebruikers</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Onbeperkt access points</li>
+                        <li>✓ Multiple switches & VLAN's</li>
+                        <li>✓ Enterprise firewall cluster</li>
+                        <li>✓ 24/7 monitoring & alerting</li>
+                        <li>✓ Dagelijkse updates</li>
+                        <li>✓ Dedicated engineer</li>
+                        <li>✓ Response tijd &lt;30 min</li>
+                        <li>✓ Monthly review & planning</li>
+                        <li>✓ Change management</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Start Enterprise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Stop met Netwerk Frustraties</h2>
+            <p>Laat ons uw WiFi problemen voor eens en altijd oplossen. Gratis scan zonder verplichtingen.</p>
+            <div style="margin-top: 2rem;">
+                <a href="tel:0614348398" class="btn-primary" style="background: white; color: var(--primary); font-size: 1.25rem; padding: 1rem 3rem;">
+                    📶 Plan gratis WiFi scan: 06-14348398
+                </a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.875rem;">Of mail naar: netwerk@chrisnetworks.nl</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chris Networks</h3>
+                    <p>Lokale IT-partner voor MKB in Almere. Praktische expertise, betrouwbare service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Populaire Artikelen</h3>
+                    <ul>
+                        <li><a href="/blog/wifi-netwerkproblemen-kantoor">WiFi problemen oplossen</a></li>
+                        <li><a href="/blog/beveiliging-werkplekken-2025">Werkplek beveiliging 2025</a></li>
+                        <li><a href="/blog/kosten-werkplekbeheer-uitgelegd">Kosten werkplekbeheer</a></li>
+                        <li><a href="/blog/wat-is-werkplekbeheer">Wat is werkplekbeheer?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Diensten</h3>
+                    <ul>
+                        <li><a href="/digitale-werkplek">Digitale Werkplek</a></li>
+                        <li><a href="/beveiliging-backup">IT Beveiliging</a></li>
+                        <li><a href="/netwerkbeheer">Netwerkbeheer</a></li>
+                        <li><a href="/support-247">24/7 Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>📍 Siennastraat 243, 1339 CX Almere</li>
+                        <li>📞 <a href="tel:0614348398">06-14348398</a></li>
+                        <li>✉️ <a href="mailto:info@chrisnetworks.nl">info@chrisnetworks.nl</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chris Networks - KvK: 80365760 - Alle rechten voorbehouden</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

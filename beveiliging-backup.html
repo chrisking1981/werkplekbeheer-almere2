@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Beveiliging & Backup Almere | Cybersecurity MKB | Chris Networks</title>
+    <meta name="description" content="★ IT beveiliging Almere ✓ Cloud backup oplossingen ✓ Ransomware bescherming ✓ 24/7 monitoring ✓ Microsoft Defender ✓ Lokale cybersecurity experts voor MKB">
+    <meta name="keywords" content="IT beveiliging Almere, cloud backup MKB, cybersecurity Almere, ransomware bescherming, endpoint security, data backup">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="EaJJFHnWk005kbsnOiQMtCcdASqkT_DXZrK4YvJekuI">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8QSY1HVGL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M8QSY1HVGL');
+    </script>
+    
+    <!-- Structured Data for Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "IT Beveiliging & Backup Services",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Chris Networks",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Siennastraat 243",
+          "addressLocality": "Almere",
+          "postalCode": "1339 CX",
+          "addressRegion": "Flevoland",
+          "addressCountry": "NL"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Almere"
+      },
+      "description": "Professionele IT beveiliging en cloud backup oplossingen voor MKB bedrijven in Almere. 24/7 monitoring, ransomware bescherming en disaster recovery.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "149",
+        "highPrice": "349",
+        "priceCurrency": "EUR",
+        "offerCount": "3"
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wat kost een goede IT beveiliging voor mijn bedrijf?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Complete IT beveiliging inclusief antivirus, firewall, backup en monitoring kost vanaf €149 per maand voor een klein MKB bedrijf (5-10 werkplekken). Dit is inclusief 24/7 monitoring en automatische updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoe vaak worden backups gemaakt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wij maken dagelijks automatische backups van al uw belangrijke data. Kritieke systemen kunnen elk uur worden gebackupt. Backups worden minimaal 30 dagen bewaard in de cloud."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat gebeurt er bij een ransomware aanval?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bij een ransomware aanval isoleren we direct het getroffen systeem, stoppen de verspreiding en herstellen uw data vanaf de laatste schone backup. Gemiddeld bent u binnen 4 uur weer operationeel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is mijn bedrijf te klein voor professionele IT beveiliging?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nee, juist kleine bedrijven zijn vaak doelwit van cybercriminelen. Wij bieden betaalbare beveiligingspakketten vanaf 5 werkplekken. 67% van cyberaanvallen richt zich op MKB bedrijven."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <style>
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --secondary: #3b82f6;
+            --accent: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            --gradient-danger: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            background: var(--background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--gradient);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 5rem;
+            background: linear-gradient(135deg, #fef3c7 0%, #fee2e2 100%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-danger);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Alert Banner */
+        .alert-banner {
+            background: var(--danger);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .alert-banner a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Threat Stats */
+        .threat-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .threat-stat {
+            text-align: center;
+        }
+
+        .threat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--danger);
+        }
+
+        .threat-label {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .security-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .security-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .security-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .security-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .security-card ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+
+        .security-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .security-card li::before {
+            content: "🛡️";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Backup Section */
+        .backup-section {
+            padding: 5rem 0;
+            background: var(--surface);
+        }
+
+        .backup-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .backup-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .backup-list {
+            list-style: none;
+        }
+
+        .backup-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .backup-list li:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 5rem 0;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: "Meest gekozen";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .pricing-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            padding: 5rem 0;
+            background: var(--surface);
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .testimonial-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+        }
+
+        .testimonial-company {
+            color: var(--text-secondary);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 0;
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .threat-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .backup-features {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-banner">
+        ⚠️ Cyberaanvallen op MKB bedrijven stijgen met 300% - <a href="#contact">Bescherm uw bedrijf vandaag nog</a>
+    </div>
+
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Chris Networks</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/wat-is-werkplekbeheer">Werkplekbeheer</a></li>
+                <li><a href="/#diensten" class="active">Diensten</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/kosten-werkplekbeheer">Kosten</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="tel:0614348398" class="cta-button">📞 06-14348398</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>IT Beveiliging & Backup Almere</h1>
+                    <p>Bescherm uw bedrijf tegen ransomware, dataverlies en cyberaanvallen. 24/7 monitoring door lokale security experts.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Vraag gratis security scan aan</a>
+                        <a href="#pricing" class="btn-secondary">Bekijk beveiligingspakketten</a>
+                    </div>
+                    <div class="threat-stats">
+                        <div class="threat-stat">
+                            <div class="threat-number">67%</div>
+                            <div class="threat-label">MKB doelwit cybercrime</div>
+                        </div>
+                        <div class="threat-stat">
+                            <div class="threat-number">€43K</div>
+                            <div class="threat-label">Gem. schade per incident</div>
+                        </div>
+                        <div class="threat-stat">
+                            <div class="threat-number">21</div>
+                            <div class="threat-label">Dagen downtime</div>
+                        </div>
+                        <div class="threat-stat">
+                            <div class="threat-number">60%</div>
+                            <div class="threat-label">Failliet binnen 6 mnd</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Security shield illustration placeholder -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Complete IT Beveiliging voor MKB</h2>
+                <p>Meerdere beveiligingslagen beschermen uw bedrijfsdata 24/7</p>
+            </div>
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-icon">🛡️</div>
+                    <h3>Endpoint Security</h3>
+                    <ul>
+                        <li>Microsoft Defender for Business</li>
+                        <li>Real-time malware bescherming</li>
+                        <li>Automatische threat response</li>
+                        <li>Device compliance policies</li>
+                        <li>BitLocker encryptie</li>
+                    </ul>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">🔐</div>
+                    <h3>Email & Phishing Beveiliging</h3>
+                    <ul>
+                        <li>Advanced threat protection</li>
+                        <li>Anti-phishing filters</li>
+                        <li>Safe attachments scanning</li>
+                        <li>Spoofing preventie</li>
+                        <li>Quarantaine beheer</li>
+                    </ul>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">🚪</div>
+                    <h3>Toegangsbeveiliging</h3>
+                    <ul>
+                        <li>Multi-factor authenticatie (MFA)</li>
+                        <li>Conditional access policies</li>
+                        <li>Single sign-on (SSO)</li>
+                        <li>Privileged access management</li>
+                        <li>Password policies</li>
+                    </ul>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">🔥</div>
+                    <h3>Firewall & Netwerk</h3>
+                    <ul>
+                        <li>Next-gen firewall beheer</li>
+                        <li>Intrusion detection (IDS)</li>
+                        <li>VPN configuratie</li>
+                        <li>Network segmentatie</li>
+                        <li>Traffic monitoring</li>
+                    </ul>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">👁️</div>
+                    <h3>24/7 Security Monitoring</h3>
+                    <ul>
+                        <li>Security Operations Center</li>
+                        <li>Real-time threat detection</li>
+                        <li>Incident response team</li>
+                        <li>Log analysis & SIEM</li>
+                        <li>Monthly security reports</li>
+                    </ul>
+                </div>
+                <div class="security-card">
+                    <div class="security-icon">🎓</div>
+                    <h3>Security Awareness</h3>
+                    <ul>
+                        <li>Phishing simulaties</li>
+                        <li>Security trainingen</li>
+                        <li>Best practice guidelines</li>
+                        <li>Incident procedures</li>
+                        <li>Compliance ondersteuning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="backup-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cloud Backup & Disaster Recovery</h2>
+                <p>Uw data is veilig, wat er ook gebeurt</p>
+            </div>
+            <div class="backup-features">
+                <div class="backup-content">
+                    <h3>Automatische Cloud Backup</h3>
+                    <p>Verlies nooit meer belangrijke bedrijfsdata. Onze geautomatiseerde backup oplossing beschermt al uw kritieke informatie.</p>
+                    <ul class="backup-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Continue Data Protection</strong><br>
+                                Automatische backup elk uur voor kritieke data
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>3-2-1 Backup Strategie</strong><br>
+                                3 kopieën, 2 verschillende media, 1 offsite locatie
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Ransomware Recovery</strong><br>
+                                Immutable backups die niet versleuteld kunnen worden
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Snelle Recovery</strong><br>
+                                Complete restore binnen 4 uur, file-level binnen minuten
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Compliance Ready</strong><br>
+                                GDPR-compliant met encryptie en audit trails
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="backup-image">
+                    <!-- Backup illustration placeholder -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Beveiligingspakketten voor elk MKB</h2>
+                <p>Complete bescherming zonder verrassingen</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basis Beveiliging</h3>
+                        <div class="pricing-price">€149<span>/maand</span></div>
+                        <p style="color: var(--text-secondary);">Tot 10 werkplekken</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Microsoft Defender antivirus</li>
+                        <li>✓ Email beveiliging</li>
+                        <li>✓ Firewall configuratie</li>
+                        <li>✓ Dagelijkse backups</li>
+                        <li>✓ Basis monitoring</li>
+                        <li>✓ Maandelijkse updates</li>
+                        <li>✓ Support tijdens kantooruren</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Start Basis</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Professionele Beveiliging</h3>
+                        <div class="pricing-price">€249<span>/maand</span></div>
+                        <p style="color: var(--text-secondary);">Tot 25 werkplekken</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Alles uit Basis pakket</li>
+                        <li>✓ Advanced threat protection</li>
+                        <li>✓ 24/7 security monitoring</li>
+                        <li>✓ Elk uur backup kritieke data</li>
+                        <li>✓ Multi-factor authenticatie</li>
+                        <li>✓ Security awareness training</li>
+                        <li>✓ Incident response team</li>
+                        <li>✓ Maandelijkse security rapportage</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Start Professional</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise Beveiliging</h3>
+                        <div class="pricing-price">€349<span>/maand</span></div>
+                        <p style="color: var(--text-secondary);">25+ werkplekken</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Alles uit Professional pakket</li>
+                        <li>✓ Dedicated security manager</li>
+                        <li>✓ SIEM & log management</li>
+                        <li>✓ Penetration testing (2x/jaar)</li>
+                        <li>✓ Compliance assistance</li>
+                        <li>✓ Custom security policies</li>
+                        <li>✓ Priority incident response</li>
+                        <li>✓ Executive reporting</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Start Enterprise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "Na een ransomware aanval bij een collega-bedrijf hebben we direct Chris Networks ingeschakeld. Hun security scan onthulde verschillende kwetsbaarheden die we niet kenden. Nu slapen we weer rustig, wetende dat onze data veilig is."
+                </p>
+                <div class="testimonial-author">Peter van der Berg</div>
+                <div class="testimonial-company">Directeur, Logistiek Bedrijf Almere (45 medewerkers)</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Wacht niet tot het te laat is</h2>
+            <p>Elke 11 seconden wordt een bedrijf getroffen door ransomware. Vraag nu uw gratis security scan aan.</p>
+            <div style="margin-top: 2rem;">
+                <a href="tel:0614348398" class="btn-primary" style="background: white; color: var(--primary); font-size: 1.25rem; padding: 1rem 3rem;">
+                    🛡️ Bel voor security advies: 06-14348398
+                </a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.875rem;">Of mail naar: security@chrisnetworks.nl</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chris Networks</h3>
+                    <p>Lokale IT-partner voor MKB in Almere. Praktische expertise, betrouwbare service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Populaire Artikelen</h3>
+                    <ul>
+                        <li><a href="/blog/wifi-netwerkproblemen-kantoor">WiFi problemen oplossen</a></li>
+                        <li><a href="/blog/beveiliging-werkplekken-2025">Werkplek beveiliging 2025</a></li>
+                        <li><a href="/blog/kosten-werkplekbeheer-uitgelegd">Kosten werkplekbeheer</a></li>
+                        <li><a href="/blog/wat-is-werkplekbeheer">Wat is werkplekbeheer?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Diensten</h3>
+                    <ul>
+                        <li><a href="/digitale-werkplek">Digitale Werkplek</a></li>
+                        <li><a href="/beveiliging-backup">IT Beveiliging</a></li>
+                        <li><a href="/netwerkbeheer">Netwerkbeheer</a></li>
+                        <li><a href="/support-247">24/7 Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>📍 Siennastraat 243, 1339 CX Almere</li>
+                        <li>📞 <a href="tel:0614348398">06-14348398</a></li>
+                        <li>✉️ <a href="mailto:info@chrisnetworks.nl">info@chrisnetworks.nl</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chris Networks - KvK: 80365760 - Alle rechten voorbehouden</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

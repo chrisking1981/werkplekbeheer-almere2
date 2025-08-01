@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systeembeheer Almere | Server Beheer & IT Infrastructuur | Chris Networks</title>
+    <meta name="description" content="★ Systeembeheer Almere ✓ Server beheer ✓ Windows/Linux beheer ✓ Database onderhoud ✓ Cloud infrastructuur ✓ 24/7 monitoring ✓ Lokale IT experts">
+    <meta name="keywords" content="systeembeheer Almere, server beheer, IT infrastructuur, Windows server, Linux beheer, database onderhoud, proactief onderhoud">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="EaJJFHnWk005kbsnOiQMtCcdASqkT_DXZrK4YvJekuI">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8QSY1HVGL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M8QSY1HVGL');
+    </script>
+    
+    <!-- Structured Data for Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Systeembeheer Services",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Chris Networks",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Siennastraat 243",
+          "addressLocality": "Almere",
+          "postalCode": "1339 CX",
+          "addressRegion": "Flevoland",
+          "addressCountry": "NL"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Almere"
+      },
+      "description": "Professioneel systeembeheer en server beheer voor MKB bedrijven in Almere. Specialist in Windows Server, Linux, databases en cloud infrastructuur.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "299",
+        "highPrice": "999",
+        "priceCurrency": "EUR",
+        "offerCount": "3"
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wat is het verschil tussen werkplekbeheer en systeembeheer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Werkplekbeheer richt zich op de individuele werkplekken van gebruikers. Systeembeheer behelst het beheer van servers, databases, infrastructuur en systemen die meerdere gebruikers ondersteunen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat kost professioneel systeembeheer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Systeembeheer kost vanaf €299 per maand voor kleine infrastructuur. Grotere omgevingen met meerdere servers en complexe systemen vanaf €599-€999 per maand, afhankelijk van complexiteit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welke systemen kunnen jullie beheren?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wij beheren Windows Server, Linux (Ubuntu, CentOS, RHEL), virtualisatie platforms (VMware, Hyper-V), databases (SQL Server, MySQL, PostgreSQL), cloud infrastructuur (Azure, AWS) en backup systemen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoe voorkom ik server downtime?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Proactief systeembeheer met 24/7 monitoring, automatische updates, preventief onderhoud en redundantie voorkomt 90% van alle server problemen voordat ze optreden."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <style>
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --secondary: #3b82f6;
+            --accent: #10b981;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            --gradient-dark: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            background: var(--background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--gradient);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Alert Banner */
+        .alert-banner {
+            background: var(--gradient-dark);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .alert-banner a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 5rem;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-dark);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* System Stats */
+        .system-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .system-stat {
+            text-align: center;
+        }
+
+        .system-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .system-label {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Difference Section */
+        .difference {
+            padding: 5rem 0;
+            background: var(--surface);
+        }
+
+        .comparison-table {
+            max-width: 900px;
+            margin: 3rem auto 0;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            background: var(--gradient);
+            color: white;
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table .category {
+            font-weight: 600;
+            width: 200px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+
+        .service-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-card li::before {
+            content: "⚙️";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Technologies Section */
+        .technologies {
+            padding: 5rem 0;
+            background: var(--surface);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .tech-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .tech-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient);
+            margin: 0 auto 1rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .tech-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-card p {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 5rem 0;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: "Meest gekozen";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .pricing-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 5rem 0;
+            background: var(--surface);
+        }
+
+        .process-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .process-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 0;
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .system-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .comparison-table {
+                overflow-x: auto;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-banner">
+        🖥️ Server problemen? Preventief onderhoud voorkomt 90% van alle storingen - <a href="#contact">Plan onderhoudscheck</a>
+    </div>
+
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Chris Networks</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/wat-is-werkplekbeheer">Werkplekbeheer</a></li>
+                <li><a href="/#diensten" class="active">Diensten</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/kosten-werkplekbeheer">Kosten</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="tel:0614348398" class="cta-button">📞 06-14348398</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Systeembeheer Almere</h1>
+                    <p>Professioneel beheer van servers, databases en IT-infrastructuur. Proactief onderhoud voorkomt downtime en verhoogt prestaties.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Vraag systeem audit aan</a>
+                        <a href="#difference" class="btn-secondary">Verschil werkplekbeheer</a>
+                    </div>
+                    <div class="system-stats">
+                        <div class="system-stat">
+                            <div class="system-number">300+</div>
+                            <div class="system-label">Servers beheerd</div>
+                        </div>
+                        <div class="system-stat">
+                            <div class="system-number">99.8%</div>
+                            <div class="system-label">Server uptime</div>
+                        </div>
+                        <div class="system-stat">
+                            <div class="system-number">15min</div>
+                            <div class="system-label">Response tijd</div>
+                        </div>
+                        <div class="system-stat">
+                            <div class="system-number">24/7</div>
+                            <div class="system-label">Monitoring</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Server rack illustration placeholder -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="difference" id="difference">
+        <div class="container">
+            <div class="section-header">
+                <h2>Systeembeheer vs Werkplekbeheer</h2>
+                <p>Beide diensten vullen elkaar aan voor complete IT-ondersteuning</p>
+            </div>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Werkplekbeheer</th>
+                            <th>Systeembeheer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="category">Focus</td>
+                            <td>Individuele werkplekken</td>
+                            <td>Servers & infrastructuur</td>
+                        </tr>
+                        <tr>
+                            <td class="category">Doelgroep</td>
+                            <td>Eindgebruikers</td>
+                            <td>Bedrijfskritieke systemen</td>
+                        </tr>
+                        <tr>
+                            <td class="category">Scope</td>
+                            <td>Laptops, desktops, mobiele devices</td>
+                            <td>Servers, databases, virtualisatie</td>
+                        </tr>
+                        <tr>
+                            <td class="category">Complexiteit</td>
+                            <td>Standaard configuraties</td>
+                            <td>Custom enterprise configuraties</td>
+                        </tr>
+                        <tr>
+                            <td class="category">Downtime impact</td>
+                            <td>1 gebruiker offline</td>
+                            <td>Heel bedrijf offline</td>
+                        </tr>
+                        <tr>
+                            <td class="category">Wanneer kiezen</td>
+                            <td>Cloud-first, moderne werkplekken</td>
+                            <td>On-premise servers, legacy systemen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Complete Systeembeheer Diensten</h2>
+                <p>Van servers tot databases - wij beheren uw complete IT-infrastructuur</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🖥️</div>
+                    <h3>Windows Server Beheer</h3>
+                    <ul>
+                        <li>Active Directory beheer</li>
+                        <li>Group Policy management</li>
+                        <li>Windows Server updates</li>
+                        <li>File server optimalisatie</li>
+                        <li>Print server configuratie</li>
+                        <li>WSUS deployment</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🐧</div>
+                    <h3>Linux Server Beheer</h3>
+                    <ul>
+                        <li>Ubuntu/CentOS/RHEL support</li>
+                        <li>Apache/Nginx webservers</li>
+                        <li>Docker containerization</li>
+                        <li>Shell scripting & automation</li>
+                        <li>Security hardening</li>
+                        <li>Performance tuning</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗄️</div>
+                    <h3>Database Beheer</h3>
+                    <ul>
+                        <li>SQL Server administration</li>
+                        <li>MySQL/PostgreSQL beheer</li>
+                        <li>Database backup & restore</li>
+                        <li>Performance optimalisatie</li>
+                        <li>Index maintenance</li>
+                        <li>High availability setup</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Virtualisatie & Cloud</h3>
+                    <ul>
+                        <li>VMware vSphere beheer</li>
+                        <li>Hyper-V virtualisatie</li>
+                        <li>Azure/AWS infrastructure</li>
+                        <li>Hybrid cloud setup</li>
+                        <li>Resource monitoring</li>
+                        <li>Disaster recovery planning</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Monitoring & Alerting</h3>
+                    <ul>
+                        <li>24/7 systeem monitoring</li>
+                        <li>Proactieve alerting</li>
+                        <li>Performance dashboards</li>
+                        <li>Capacity planning</li>
+                        <li>Trend analysis</li>
+                        <li>SLA rapportages</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Preventief Onderhoud</h3>
+                    <ul>
+                        <li>Maandelijkse health checks</li>
+                        <li>Automatische updates</li>
+                        <li>Disk cleanup & defrag</li>
+                        <li>Log file management</li>
+                        <li>Security patches</li>
+                        <li>Hardware monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technologieën & Platforms</h2>
+                <p>Wij zijn gecertificeerd in de nieuwste enterprise technologieën</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">🪟</div>
+                    <h3>Microsoft</h3>
+                    <p>Windows Server, Azure, SQL Server, Exchange, System Center</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🐧</div>
+                    <h3>Linux</h3>
+                    <p>Ubuntu, CentOS, RHEL, SUSE, Debian distributions</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">⚡</div>
+                    <h3>VMware</h3>
+                    <p>vSphere, ESXi, vCenter, vSAN, NSX virtualisatie</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">☁️</div>
+                    <h3>Cloud Platforms</h3>
+                    <p>Microsoft Azure, Amazon AWS, Google Cloud Platform</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <p>SQL Server, MySQL, PostgreSQL, Oracle, MongoDB</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">📊</div>
+                    <h3>Monitoring</h3>
+                    <p>PRTG, Nagios, Zabbix, Grafana, Prometheus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Onze Systeembeheer Aanpak</h2>
+                <p>Proactief beheer voorkomt problemen voordat ze optreden</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Systeem Audit</h3>
+                        <p>Uitgebreide analyse van uw huidige infrastructuur, identificatie van knelpunten en risico's.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Monitoring Setup</h3>
+                        <p>Implementatie van 24/7 monitoring met proactieve alerting voor alle kritieke systemen.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Preventief Onderhoud</h3>
+                        <p>Maandelijks preventief onderhoud, updates en optimalisaties om problemen te voorkomen.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Continue Optimalisatie</h3>
+                        <p>Voortdurende verbetering van performance, security en betrouwbaarheid van uw systemen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Systeembeheer Pakketten</h2>
+                <p>Professioneel serverbeheer voor elke infrastructuur</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basis Infrastructuur</h3>
+                        <div class="pricing-price">€299<span>/maand</span></div>
+                        <p style="color: var(--text-secondary);">1-2 servers</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Tot 2 fysieke/virtuele servers</li>
+                        <li>✓ Windows of Linux beheer</li>
+                        <li>✓ Basis monitoring</li>
+                        <li>✓ Maandelijks onderhoud</li>
+                        <li>✓ Backup monitoring</li>
+                        <li>✓ Support kantooruren</li>
+                        <li>✓ Response tijd &lt;4 uur</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Start Basis</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Professionele Infrastructuur</h3>
+                        <div class="pricing-price">€599<span>/maand</span></div>
+                        <p style="color: var(--text-secondary);">3-8 servers</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Tot 8 servers (fysiek/virtueel)</li>
+                        <li>✓ Database beheer</li>
+                        <li>✓ 24/7 monitoring & alerting</li>
+                        <li>✓ Wekelijks preventief onderhoud</li>
+                        <li>✓ Virtualisatie beheer</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Response tijd &lt;1 uur</li>
+                        <li>✓ Performance rapportages</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Start Professional</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise Infrastructuur</h3>
+                        <div class="pricing-price">€999<span>/maand</span></div>
+                        <p style="color: var(--text-secondary);">8+ servers</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Onbeperkt aantal servers</li>
+                        <li>✓ High availability setup</li>
+                        <li>✓ Disaster recovery planning</li>
+                        <li>✓ Cloud infrastructure beheer</li>
+                        <li>✓ Dedicated systems engineer</li>
+                        <li>✓ 24/7 priority support</li>
+                        <li>✓ Response tijd &lt;15 min</li>
+                        <li>✓ Custom automation</li>
+                        <li>✓ Compliance rapportages</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Start Enterprise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Stabiliseer Uw IT-Infrastructuur</h2>
+            <p>Voorkom server downtime met proactief systeembeheer. Gratis audit van uw huidige infrastructuur.</p>
+            <div style="margin-top: 2rem;">
+                <a href="tel:0614348398" class="btn-primary" style="background: white; color: var(--primary); font-size: 1.25rem; padding: 1rem 3rem;">
+                    🖥️ Plan systeem audit: 06-14348398
+                </a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.875rem;">Of mail naar: systemen@chrisnetworks.nl</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chris Networks</h3>
+                    <p>Lokale IT-partner voor MKB in Almere. Praktische expertise, betrouwbare service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Populaire Artikelen</h3>
+                    <ul>
+                        <li><a href="/blog/wifi-netwerkproblemen-kantoor">WiFi problemen oplossen</a></li>
+                        <li><a href="/blog/beveiliging-werkplekken-2025">Werkplek beveiliging 2025</a></li>
+                        <li><a href="/blog/kosten-werkplekbeheer-uitgelegd">Kosten werkplekbeheer</a></li>
+                        <li><a href="/blog/wat-is-werkplekbeheer">Wat is werkplekbeheer?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Diensten</h3>
+                    <ul>
+                        <li><a href="/digitale-werkplek">Digitale Werkplek</a></li>
+                        <li><a href="/beveiliging-backup">IT Beveiliging</a></li>
+                        <li><a href="/netwerkbeheer">Netwerkbeheer</a></li>
+                        <li><a href="/support-247">24/7 Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>📍 Siennastraat 243, 1339 CX Almere</li>
+                        <li>📞 <a href="tel:0614348398">06-14348398</a></li>
+                        <li>✉️ <a href="mailto:info@chrisnetworks.nl">info@chrisnetworks.nl</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chris Networks - KvK: 80365760 - Alle rechten voorbehouden</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

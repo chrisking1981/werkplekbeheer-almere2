@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitale Werkplek Almere | Microsoft 365 & Cloud Werkplekken | Chris Networks</title>
+    <meta name="description" content="★ Digitale werkplek Almere ✓ Microsoft 365 implementatie ✓ Cloud werkplekken ✓ Hybride werken ✓ VPN & remote access ✓ Lokale experts voor MKB">
+    <meta name="keywords" content="digitale werkplek Almere, Microsoft 365 Almere, cloud werkplek, hybride werken, remote desktop, Office 365 beheer">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="EaJJFHnWk005kbsnOiQMtCcdASqkT_DXZrK4YvJekuI">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8QSY1HVGL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M8QSY1HVGL');
+    </script>
+    
+    <!-- Structured Data for Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Digitale Werkplek Implementatie",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Chris Networks",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Siennastraat 243",
+          "addressLocality": "Almere",
+          "postalCode": "1339 CX",
+          "addressRegion": "Flevoland",
+          "addressCountry": "NL"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Almere"
+      },
+      "description": "Complete inrichting van moderne digitale werkplekken met Microsoft 365, cloud storage en veilige remote toegang voor MKB bedrijven in Almere",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "39",
+        "highPrice": "89",
+        "priceCurrency": "EUR",
+        "offerCount": "3"
+      }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wat is een digitale werkplek?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Een digitale werkplek is een moderne IT-omgeving waarin medewerkers overal kunnen werken. Het omvat cloud applicaties zoals Microsoft 365, veilige toegang tot bedrijfsdata, online samenwerking tools en automatische backups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat kost een digitale werkplek per medewerker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Een complete digitale werkplek kost vanaf €39 per gebruiker per maand. Dit is inclusief Microsoft 365 Business licentie, cloud storage, email, Teams en beveiligingssoftware."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoe lang duurt de implementatie van digitale werkplekken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Voor een MKB bedrijf (10-50 medewerkers) duurt de volledige migratie naar digitale werkplekken gemiddeld 2-4 weken. Wij zorgen voor een gefaseerde overgang zonder downtime."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kunnen onze medewerkers straks overal werken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, met een digitale werkplek kunnen medewerkers veilig werken vanaf kantoor, thuis of onderweg. Alle data staat in de cloud en is beveiligd met multi-factor authenticatie."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <style>
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --secondary: #3b82f6;
+            --accent: #10b981;
+            --background: #ffffff;
+            --surface: #f8fafc;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            background: var(--background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .cta-button {
+            background: var(--gradient);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 5rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+
+        .service-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 5rem 0;
+            background: var(--surface);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: "Meest gekozen";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .pricing-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 5rem 0;
+        }
+
+        .process-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .process-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 0;
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-primary);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Chris Networks</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/wat-is-werkplekbeheer">Werkplekbeheer</a></li>
+                <li><a href="/#diensten" class="active">Diensten</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/kosten-werkplekbeheer">Kosten</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="tel:0614348398" class="cta-button">📞 06-14348398</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Digitale Werkplek Almere</h1>
+                    <p>Laat uw medewerkers overal productief werken met Microsoft 365 en veilige cloud oplossingen. Lokale implementatie door experts.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Start gratis adviesgesprek</a>
+                        <a href="#services" class="btn-secondary">Bekijk mogelijkheden</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">250+</div>
+                            <div class="stat-label">Digitale werkplekken</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Uptime garantie</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2-4</div>
+                            <div class="stat-label">Weken implementatie</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder voor illustratie -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Complete Digitale Werkplek Oplossing</h2>
+                <p>Alles wat uw medewerkers nodig hebben om modern en flexibel te werken</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📧</div>
+                    <h3>Microsoft 365 Business</h3>
+                    <ul>
+                        <li>Exchange Online email</li>
+                        <li>Teams voor samenwerking</li>
+                        <li>SharePoint & OneDrive</li>
+                        <li>Office apps (Word, Excel, PowerPoint)</li>
+                        <li>1TB cloudopslag per gebruiker</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Veilige Toegang</h3>
+                    <ul>
+                        <li>Multi-factor authenticatie (MFA)</li>
+                        <li>VPN voor veilig thuiswerken</li>
+                        <li>Conditional Access policies</li>
+                        <li>Device compliance beheer</li>
+                        <li>Data loss prevention</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Device Management</h3>
+                    <ul>
+                        <li>Windows Autopilot deployment</li>
+                        <li>Mobile device management (MDM)</li>
+                        <li>Automatische software updates</li>
+                        <li>Remote wipe bij verlies/diefstal</li>
+                        <li>BYOD ondersteuning</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Infrastructuur</h3>
+                    <ul>
+                        <li>Azure Active Directory</li>
+                        <li>Cloud backup oplossingen</li>
+                        <li>Business applicaties in de cloud</li>
+                        <li>Schaalbaarheid on-demand</li>
+                        <li>99.9% uptime garantie</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Security & Compliance</h3>
+                    <ul>
+                        <li>Microsoft Defender antivirus</li>
+                        <li>Email threat protection</li>
+                        <li>GDPR compliance tools</li>
+                        <li>Security awareness training</li>
+                        <li>24/7 security monitoring</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Productiviteit Tools</h3>
+                    <ul>
+                        <li>Power Automate workflows</li>
+                        <li>Power BI rapportages</li>
+                        <li>Microsoft Planner</li>
+                        <li>Bookings voor afspraken</li>
+                        <li>Forms voor enquêtes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transparante Prijzen Digitale Werkplek</h2>
+                <p>All-in tarieven per gebruiker per maand, geen verborgen kosten</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basis Werkplek</h3>
+                        <div class="pricing-price">€39<span>/gebruiker/maand</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Microsoft 365 Business Basic</li>
+                        <li>✓ Email & agenda</li>
+                        <li>✓ Teams & SharePoint</li>
+                        <li>✓ 1TB OneDrive opslag</li>
+                        <li>✓ Basis support (kantooruren)</li>
+                        <li>✓ Maandelijks opzegbaar</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Kies Basis</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Professionele Werkplek</h3>
+                        <div class="pricing-price">€59<span>/gebruiker/maand</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Microsoft 365 Business Standard</li>
+                        <li>✓ Alle Office desktop apps</li>
+                        <li>✓ Advanced threat protection</li>
+                        <li>✓ Device management (MDM)</li>
+                        <li>✓ 24/7 support & monitoring</li>
+                        <li>✓ Backup & disaster recovery</li>
+                        <li>✓ SLA 99.9% uptime</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Kies Professional</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise Werkplek</h3>
+                        <div class="pricing-price">€89<span>/gebruiker/maand</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Microsoft 365 Business Premium</li>
+                        <li>✓ Geavanceerde security features</li>
+                        <li>✓ Azure AD Premium P1</li>
+                        <li>✓ Intune device management</li>
+                        <li>✓ Dedicated account manager</li>
+                        <li>✓ Custom integraties</li>
+                        <li>✓ Priority support (15 min)</li>
+                        <li>✓ Compliance rapportages</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width: 100%; text-align: center;">Kies Enterprise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Uw Digitale Transformatie in 4 Stappen</h2>
+                <p>Van advies tot volledige implementatie binnen 2-4 weken</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Gratis Inventarisatie</h3>
+                        <p>We analyseren uw huidige IT-omgeving en werkprocessen. Samen bepalen we de ideale digitale werkplek configuratie voor uw organisatie.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Plan & Voorbereiding</h3>
+                        <p>Gedetailleerd migratieplan met minimale impact op uw bedrijfsvoering. Licenties worden geregeld en accounts voorbereid.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Migratie & Implementatie</h3>
+                        <p>Gefaseerde uitrol van Microsoft 365, data migratie en device configuratie. Uw medewerkers blijven gewoon doorwerken.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Training & Support</h3>
+                        <p>Persoonlijke training voor uw team en continue ondersteuning. Wij blijven uw digitale werkplekken beheren en optimaliseren.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Klaar voor de Digitale Werkplek?</h2>
+            <p>Laat uw bedrijf groeien met moderne IT. Gratis adviesgesprek binnen 24 uur.</p>
+            <div style="margin-top: 2rem;">
+                <a href="tel:0614348398" class="btn-primary" style="background: white; color: var(--primary); font-size: 1.25rem; padding: 1rem 3rem;">
+                    Bel nu: 06-14348398
+                </a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.875rem;">Of mail naar: info@chrisnetworks.nl</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chris Networks</h3>
+                    <p>Lokale IT-partner voor MKB in Almere en omgeving. Specialist in digitale werkplekken en modern werkplekbeheer.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Diensten</h3>
+                    <ul>
+                        <li><a href="/wat-is-werkplekbeheer">Werkplekbeheer</a></li>
+                        <li><a href="/digitale-werkplek">Digitale Werkplek</a></li>
+                        <li><a href="/beveiliging-backup">Beveiliging & Backup</a></li>
+                        <li><a href="/kosten-werkplekbeheer">Kosten & Pakketten</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>📍 Siennastraat 243, 1339 CX Almere</li>
+                        <li>📞 <a href="tel:0614348398">06-14348398</a></li>
+                        <li>✉️ <a href="mailto:info@chrisnetworks.nl">info@chrisnetworks.nl</a></li>
+                        <li>🕒 Ma-Vr: 08:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Gebied</h3>
+                    <ul>
+                        <li>Almere Stad</li>
+                        <li>Almere Haven</li>
+                        <li>Almere Buiten</li>
+                        <li>Almere Poort</li>
+                        <li>Lelystad</li>
+                        <li>Zeewolde</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chris Networks - KvK: 80365760 - Alle rechten voorbehouden</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
