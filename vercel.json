@@ -4,6 +4,7 @@
       "runtime": "vercel-php@0.7.2"
     }
   },
+  "comment": "Updated blog routing configuration",
   "rewrites": [
     {
       "source": "/api/(.*)",
